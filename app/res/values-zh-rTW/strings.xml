@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">WFCARDV360</string>
+    <string name="searching">正在搜索..</string>
+    <string name="action_delete">刪除</string>
+    <string name="download_failure">下載失敗</string>
+    <string name="remote">記錄儀</string>
+    <string name="photo">圖片</string>
+    <string name="video">視頻</string>
+    <string name="phone">電話</string>
+    <!-- index -->
+    <!-- setting -->
+    <string name="set_isneedformat">確認格式化記錄儀嗎</string>
+    <!-- bluetooth -->
+    <string name="disconnect">斷開</string>
+    <string name="please_wait">請等待</string>
+    <!-- navi -->
+    <string name="navi_confDel">確定刪除嗎?</string>
+    <string name="show_location">顯示地點</string>
+    <string name="navi_locationFail">定位失敗</string>
+    <!--
+        "無", "自車", "左轉", "右轉", "左前方行駛",
+		"右前方行駛", "左後方行駛", "右後方行駛", "左轉掉頭", "直行", "到達途經點", "進入環島", "駛出環島",
+		"到達服務區", "到達收費站", "到達目的地", "進入隧道", "靠左", "靠右", "通過人行橫道", "通過過街天橋",
+		"通過地下通道", "通過廣場", "到道路斜對面"
+    -->
+    <!-- telephone -->
+    <!-- wifi camera -->
+    <string name="connecting_camera">正在連接攝像頭...</string>
+    <string name="connect_time_out_check_connect_mode">請檢查攝像頭是否打開以及攝像頭連接模式是否正確？</string>
+    <string name="wifi_stoprecordingbef">請先停止錄制 </string>
+    <string name="wifi_downloading">下載</string>
+    <string name="wifi_waitdownload">等待中</string>
+    <string name="wifi_continuedownload">繼續下載</string>
+    <string name="wifi_retrydownload">重試</string>
+    <string name="wifi_pausedownload">暫停,點擊可繼續下載</string>
+    <string name="wifi_stopwarning">警告</string>
+    <string name="manufacturer">品牌</string>
+    <string name="wifi_checkmessage">未連接到攝像頭,是否去連接?\n默認密碼:12345678,連接不上請聯系廠家或查看說明書</string>
+    <string name="ap_checkmessage">未連接到攝像頭,是否去連接?\n開啟AP將斷開WIFI</string>
+    <string name="saved_successfully">保存成功</string>
+    <string name="wifi_system_reset_success">恢復出廠設置成功</string>
+    <string name="wifi_format_sd_success">格式化成功</string>
+    <string name="wifi_system_reset_failure">恢復出廠設置失敗</string>
+    <string name="wifi_format_sd_failure">格式化失敗</string>
+    <string name="wifi_connecting">連接中，請稍後！</string>
+    <string name="wifi_sdcard">沒有SD卡,請插入SD卡</string>
+    <!-- 語音合成 -->
+    <!-- 攝像頭設置 -->
+    <string name="camset_name">修改名稱</string>
+    <string name="camset_original_name">原名稱：</string>
+    <string name="camset_setpwd">設置記錄儀密碼</string>
+    <string name="camset_autorec">自動錄制</string>
+    <string name="camset_motiondetection">移動偵測</string>
+    <string name="camset_recquality">錄制質量</string>
+    <string name="camset_format">SD卡格式化</string>
+    <string name="camset_advset">高級設置</string>
+    <string name="camset_gsensor_level">碰撞感應靈敏度</string>
+    <string name="camset_rec_time">錄制文件時長</string>
+    <string name="camset_recovery">恢復出廠設置</string>
+    <string name="camset_recovery_question">確認恢復出廠設置嗎?</string>
+    <string name="wifi_camera_storage">內存卡已滿!</string>
+    <string name="wifi_name_modified_successfully">修改名稱成功</string>
+    <string name="wifi_name_modified_fail">修改名稱失敗</string>
+    <string name="wifi_password_modified_successfully">修改密碼成功</string>
+    <string name="wifi_password_modified_fail">修改密碼失敗</string>
+    <!-- 版本檢測   tan -->
+    <string name="beta_version_have_risk">內測版本有風險,請謹慎更新,如有需要,請聯系客服</string>
+    <string name="not_get_the_current_version_information">沒有獲取到當前版本信息</string>
+    <string name="no_access_the_server_information">沒有獲取到服務器信息</string>
+    <string name="failed_to_get_server_information">獲取服務器信息失敗</string>
+    <string name="current_is_last_version">當前已是最新版本</string>
+    <string name="ota_downtitle">下載管理</string>
+    <string name="newcheckversion">最新版本</string>
+    <string name="Updatecontent">更新內容"</string>
+    <string name="Immediateupdates">立即更新</string>
+    <string name="Lateron">以後再說</string>
+    <string name="nonetwork">沒有可用的網絡</string>
+    <string name="download_newversion_failed">下載新版本失敗</string>
+    <string name="ota_downloading">下載中...,請稍後</string>
+    <string name="ota_nowpercent">當前進度:</string>
+    <string name="ota_predownload">準備下載</string>
+    <string name="ota_serviceexp">服務器異常,請稍後再試</string>
+    <string name="ota_netorserexp">網絡或者服務器異常,請稍後再試</string>
+    <!-- wifi 連接 -->
+    <string name="list_wifi_name">附近的WIFI</string>
+    <string name="wifi_add_connect">添加</string>
+    <string name="wifi_input_password">請輸入密碼</string>
+    <string name="wifi_least_password">密碼不少於3位數</string>
+    <string name="wifi_choose">請先選擇您要連接的WIFI</string>
+    <!-- 關於  tan -->
+    <string name="version_detection">檢查更新</string>
+    <string name="ok">確定</string>
+    <string name="confirm_password">確認新密碼</string>
+    <string name="enter_password">輸入新密碼</string>
+    <string name="password_inconsistent">您輸入的密碼與確認密碼不壹致</string>
+    <string name="password_too_short">您輸入的密碼少於八位數 ，無法修改</string>
+    <string name="close">關閉</string>
+    <string name="low">低</string>
+    <string name="middle">中</string>
+    <string name="high">高</string>
+    <string name="three_minute">3分鐘</string>
+    <string name="five_minute">5分鐘</string>
+    <string name="ten_minute">10分鐘</string>
+    <string name="confirm">確認</string>
+    <string name="cancel">取消</string>
+
+    <!-- 文件管理 -->
+    <string name="failed_get_filelist">獲取文件列表失敗，是否重試？</string>
+    <string name="failed_get_recording_status">獲取錄制狀態失敗，是否重試？</string>
+    <string name="failed_stop_recording">停止錄制失敗，是否重試？</string>
+    <string name="getting_filelist">正在獲取文件列表...</string>
+    <string name="getting_recording_status">正在獲取錄制狀態...</string>
+
+    <string name="delete_all_file_notice">此舉動將暫時停止錄制並且刪除加鎖文件外的所有圖片視頻文件 是否繼續？</string>
+    <string name="wheter_delete_file">是否刪除文件?</string>
+    <string name="wheter_stop_record">瀏覽攝像頭文件會導致攝像頭停止錄制,是否繼續操作?</string>
+    <string name="loading">正在加載····</string>
+    <!-- 設置 -->
+    <string name="menu_quit">註銷</string>
+    <!-- 註冊和登錄 -->
+    <string name="login">登錄</string>
+    <string name="phonenumber">手機號</string>
+    <string name="email">郵箱</string>
+    <string name="emailerror">郵箱格式錯誤</string>
+    <string name="enter_phonenumber">請輸入您的手機號</string>
+    <string name="enter_email">請輸入郵箱地址</string>
+    <string name="enter_code">請輸入驗證碼</string>
+    <string name="password">密碼</string>
+    <string name="re_enter_password">請輸入您的密碼</string>
+    <string name="enter_password_again">請再次輸入您的密碼</string>
+    <string name="register">註冊</string>
+    <string name="re_confirm_password">確認密碼</string>
+    <string name="immediately_register">馬上註冊</string>
+    <string name="account_password_notification">賬號和密碼必須都不為空!</string>
+    <string name="hasregister">此用戶已註冊</string>
+    <string name="usernotfound">此用戶不存在</string>
+    <string name="userorpwderror">用戶名或密碼錯誤</string>
+    <string name="reset">重置</string>
+    <string name="code">驗證碼</string>
+    <string name="sendcode">獲取驗證碼</string>
+    <string name="codenotifysucess">驗證碼已發送到"%1$s",請註意查收郵件</string>
+    <string name="resendcode">重新獲取(%02d)</string>
+    <string name="resendtext">重新獲取</string>
+    <string name="codetimeout">驗證碼已失效</string>
+    <string name="codeerror">驗證碼錯誤</string>
+    <!-- 消息中心 -->
+    <string name="msg_center_no_download_files">沒有指定的文件,請退出重新拍照</string>
+    <string name="msg_center_downloading_files">正在下載圖片</string>
+    <string name="msg_center_requst_files">正在獲取圖片列表</string>
+    <string name="msg_center_stop_recording">正在停止錄制</string>
+
+    <string-array name="wifi_status">
+        <item msgid="1922181315419294640"></item>
+        <item msgid="8934131797783724664">"正在掃描..."</item>
+        <item msgid="8513729475867537913">"正在連接..."</item>
+        <item msgid="515055375277271756">"正在進行身份驗證..."</item>
+        <item msgid="1943354004029184381">"正在獲取 IP 地址..."</item>
+        <item msgid="4221763391123233270">"已連接"</item>
+        <item msgid="624838831631122137">"已暫停"</item>
+        <item msgid="7979680559596111948">"正在斷開連接..."</item>
+        <item msgid="1634960474403853625">"已斷開連接"</item>
+        <item msgid="746097431216080650">"失敗"</item>
+        <item msgid="6367044185730295334">"已阻止"</item>
+        <item msgid="503942654197908005">"暫時關閉（網絡狀況不佳）"</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item msgid="7714855332363650812"></item>
+        <item msgid="8878186979715711006">"正在掃描"</item>
+        <item msgid="355508996603873860">"正在連接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <item msgid="554971459996405634">"正在通過 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 進行身份驗證"</item>
+        <item msgid="7928343808033020343">"正在從 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 獲取 IP 地址"</item>
+        <item msgid="8937994881315223448">"已連接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <item msgid="1330262655415760617">"已暫停"</item>
+        <item msgid="7698638434317271902">"正在斷開與 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 的連接"</item>
+        <item msgid="197508606402264311">"已斷開連接"</item>
+        <item msgid="8578370891960825148">"失敗"</item>
+        <item msgid="5660739516542454527">"已阻止"</item>
+        <item msgid="1805837518286731242">"暫時關閉（網絡狀況不佳）"</item>
+    </string-array>
+
+    <string name="network_timeout">網絡異常</string>
+
+    <string name="permissiontext">開啟<xliff:g id="permission">%1$s</xliff:g>失敗,請檢查是否禁用<xliff:g id="permission1">%1$s</xliff:g>權限</string>
+
+    <string name="setting">設置</string>
+
+    <string name="update">更新</string>
+    <string name="latest_version">已經是最新版本了</string>
+    <string name="get">知道了</string>
+    <string name="collection">收藏</string>
+    <string name="Tirepressure_detection">胎壓檢測</string>
+    <string name="progress_display">進度顯示</string>
+    <string name="no_wifi">非wifi網絡，確定要下載嗎</string>
+    <string name="send1">發送</string>
+    <string name="deleted_success">刪除成功</string>
+    <string name="no_data">沒有數據</string>
+
+    <string name="no">否</string>
+    <string name="save">保存</string>
+    <string name="deleted_failure">刪除失敗,請檢查網絡</string>
+    <string name="upload_failed">上傳失敗,請檢查網絡</string>
+    <string name="exit_program">再按壹次退出程序</string>
+
+    <string name="in_the_buffer">正在緩沖中...</string>
+    <string name="Check_connection">檢查網絡連接！</string>
+    <string name="Abnormal_play">播放異常！</string>
+    <string name="In_the_download">下載中...</string>
+    <string name="check_upgrade">升級檢測</string>
+    <string name="test_version">正在檢測版本號</string>
+    <string name="are_surveillance_cameras">正在檢測攝像頭連接</string>
+    <string name="check_camera_connect_fails">檢查攝像頭連接失敗,是否立即連接？</string>
+    <string name="Modify_success">修改成功</string>
+    <string name="Modify_failure">修改失敗</string>
+    <string name="request_failed">請求失敗,請重試</string>
+    <string name="Password_mistake">密碼錯誤,未連接上</string>
+    <string name="Add_network_failure">添加網絡失敗</string>
+    <string name="Abnormal_request">連接服務器異常，請檢查網絡連接</string>
+    <string name="Are_connected_camera">正在檢查攝像頭連接...</string>
+
+    <string name="Application_version">應用版本</string>
+    <string name="Camera_version">攝像頭版本</string>
+    <string name="Model">型號</string>
+    <string name="Download_file_list">下載文件列表</string>
+    <string name="mine">我的</string>
+
+    <string name="nickname">昵稱:</string>
+    <string name="open">開啟</string>
+    <string name="background_download">後臺下載</string>
+    <string name="Cancel_download">取消下載</string>
+    <string name="storage_full">存儲照片的空間已滿!</string>
+    <string name="other">其他</string>
+    <string name="only_letters_numbers">用戶名格式錯誤</string>
+    <string name="refresh">刷新</string>
+    <string name="access_camera_state">正在獲取狀態</string>
+    <string name="access_camera_state_failed">狀態獲取失敗</string>
+    <string name="Online_preview_may_not_be_smooth">此固件在線預覽可能不流暢，是否繼續播放？</string>
+    <string name="transmitting">正在傳輸</string>
+    <string name="restart_for_update">傳輸完成,請重啟設備升級</string>
+    <string name="transmission_failure">傳輸失敗</string>
+    <string name="downloading">正在下載</string>
+    <string name="install">安裝</string>
+    <string name="getting_server_information">正在獲取服務器信息...</string>
+    <string name="soft_name">軟件名</string>
+
+    <!-- 廣場 -->
+    <!--引導頁-->
+    <string name="no_files_found">沒有找到文件</string>
+    <string name="noNetWork">沒有網絡</string>
+    <string name="msg_no_camera">沒找到攝像頭</string>
+    <string name="msg_maxi_capacity">已達到照片選擇上限</string>
+    <string name="commit_num">確定(%1$d/%2$d)</string>
+    <string name="commit">確定</string>
+    <string name="nextstep">下壹步</string>
+    <string name="photo_resolution">相片分辨率</string>
+    <string name="takephoto_sucess">拍照成功</string>
+    <string name="takephoto_failed">拍照失敗</string>
+    <string name="takephoto_file">拍照文件</string>
+    <string name="white_balance">白平衡</string>
+
+    <!--通用-->
+    <string name="all_delete">全部刪除</string>
+    <string name="please_input_reply">請輸入回復內容</string>
+    <string name="reply">回復 </string>
+    <string name="signature">簽名</string>
+    <string name="select">選擇</string>
+    <string name="notice">提示</string>
+    <string name="download_cuccess">下載成功</string>
+    <string name="upgrade">升級</string>
+    <string name="set_success">設置成功</string>
+    <string name="set_failure">設置失敗</string>
+    <!-- 廣場 -->
+    <string name="show_all">顯示全部</string>
+    <string name="year_ago">年前</string>
+    <string name="month_ago">個月前</string>
+    <string name="day_ago">天前</string>
+    <string name="hour_ago">小時前</string>
+    <string name="minute_ago">分鐘前</string>
+    <string name="default_ago">剛剛</string>
+    <string name="floor">樓</string>
+    <string name="reply_hint">寫評論</string>
+    <string name="format_browsenum">%d次瀏覽</string>
+    <string name="format_reviewnum">共%d條評論</string>
+    <string name="share_title">分享到LIGOCam</string>
+    <string name="share_video_title">編輯視頻</string>
+    <string name="public_str">公開</string>
+    <string name="review_str">評論</string>
+    <string name="hint_share">此刻的心情</string>
+    <string name="title_detail">詳細信息</string>
+    <string name="share">分享</string>
+    <string name="dynamic">動態</string>
+    <string name="square">廣場</string>
+    <string name="newest">最新</string>
+    <string name="phonenum_error">手機號格式錯誤</string>
+    <string name="add_attention">加關註</string>
+    <string name="already_attention">已關註</string>
+    <string name="personal_info">個人信息</string>
+    <string name="title_fans">粉絲</string>
+    <string name="title_concern">關註</string>
+    <string name="take_photo">拍照</string>
+    <string name="photo_album">相冊</string>
+    <string name="all_photo">所有圖片</string>
+    <string name="preview">預覽</string>
+    <string name="crop">裁剪</string>
+    <string name="crop__wait">請稍後...</string>
+    <string name="crop__pick_error">裁剪錯誤</string>
+    <string name="download_error">下載失敗</string>
+    <string name="community">拍友圈</string>
+    <string name="recorder_video">記錄儀視頻</string>
+    <string name="clip_video">剪輯視頻</string>
+    <string name="report">舉報</string>
+    <string name="select_report_reason">請選擇舉報理由</string>
+    <string name="report_success">舉報成功</string>
+    <string name="select_reason">選擇理由</string>
+    <string name="homepage">個人主頁</string>
+    <string name="collection_list">收藏列表</string>
+    <string name="watchlist">關註列表</string>
+    <string name="praise_list">點贊列表</string>
+    <string name="fans_list">粉絲列表</string>
+    <string name="only_support_5_15">只支持5~15秒</string>
+    <string name="cut_video_share">當前為攝像頭視頻,請先剪切視頻後分享</string>
+    <string name="cut_video_first">請先剪輯視頻</string>
+    <string name="set_nickname">設置昵稱</string>
+    <string name="input_description">請輸入描述</string>
+    <string name="set_signature">設置簽名</string>
+    <string name="personalized_signature">個性簽名</string>
+    <string name="share_success">分享成功</string>
+    <string name="select_share_picture">請選擇要分享的圖片</string>
+    <string name="sharing">分享中</string>
+    <string name="share_need_net">分享需要網絡，請確定您當前的網絡是可用的</string>
+    <string name="cancel_collect">取消收藏</string>
+    <string name="has_collected">已經收藏</string>
+    <string name="has_canceled_collection">已經取消收藏</string>
+    <string name="location_share">位置共享</string>
+    <string name="all_photos">全部圖片</string>
+    <string name="clip_select_clip">剪輯選中片斷</string>
+    <string name="original_sound">原音</string>
+    <string name="suggest_follow">推薦關註</string>
+    <string name="take_photos">拍攝照片</string>
+    <!--舉報-->
+    <string name="obscene">色情低俗</string>
+    <string name="intrusive_advertising">廣告騷擾</string>
+    <string name="rumor">謠言</string>
+    <string name="olitical_sensitivities">政治敏感</string>
+    <string name="report_illegal">違法(暴力恐怖、違禁品等)</string>
+
+    <!--視頻剪輯-->
+    <string name="brisk">輕快</string>
+    <string name="hometown">故鄉</string>
+    <string name="strong_wind">長風</string>
+    <string name="nervous">緊張</string>
+    <string name="eagle">老鷹</string>
+    <string name="warmth">溫情</string>
+    <string name="electro">電子音</string>
+    <string name="pop">流行</string>
+    <string name="soft_rock">慢搖</string>
+    <string name="sax">薩克斯</string>
+    <string name="only_share_one_video">壹次只能分享壹個視頻,請重新選擇</string>
+    <string name="cut_warning_text">視頻剪切需要1~2分鐘,請耐心等待...</string>
+    <string name="VideoView_error_text_unknown">加載失敗</string>
+
+
+    <string name="version_info">版本信息</string>
+    <string name="feedback">意見反饋</string>
+    <string name="submit">提交</string>
+    <string name="whether_submit_crash_log">是否提交崩潰日誌</string>
+    <string name="need_customer_service">是否需要客服聯系</string>
+    <string name="theme">主題</string>
+    <string name="something_to_say">有話要說</string>
+    <string name="problem_other">其它問題</string>
+
+    <string name="wechat">微信</string>
+    <string name="wechatmoments">朋友圈</string>
+    <string name="sinaweibo">微博</string>
+    <string name="avatar">頭像</string>
+    <string name="my_qr_code">我的二維碼</string>
+    <string name="current_channel_tag">當前頻道</string>
+    <string name="voice_notic">語音提示</string>
+    <string name="please_clear_files">文件數過多會影響設備運行速度,請及時前往文件管理清理</string>
+    <string name="input_error">用戶名包含中文</string>
+    <string name="file_transfer_success">文件傳輸成功</string>
+    <string name="server_exception">服務器異常</string>
+    <string name="wifi_setting">wifi設置</string>
+    <string name="please_connect_camera">請連接攝像頭</string>
+    <string name="auto">自動</string>
+    <string name="daylight">白天</string>
+    <string name="wb_cloudy">陰天</string>
+    <string name="tungsten">鎢絲燈</string>
+    <string name="fluoresent">熒光燈</string>
+    <string name="color">色彩</string>
+    <string name="sharpness">銳度</string>
+    <string-array name="feedback_theme">
+        <item>@string/something_to_say</item>
+        <item>@string/hardware_problem</item>
+        <item>@string/problem_app</item>
+        <item>@string/problem_other</item>
+    </string-array>
+    <string name="location">位置</string>
+    <string name="complete_">完成</string>
+    <string name="search_result">搜索結果</string>
+    <string name="is_positing">正在定位中</string>
+    <string name="is_take_photo">正在拍照中</string>
+    <string name="video_play">視頻播放</string>
+    <string name="location_error">位置異常</string>
+    <string name="getting_gps_info">正在讀取gps信息</string>
+    <string name="feedback_notice">註:僅收集近兩天本應用的運行日誌,不涉及個人隱私。</string>
+    <string name="protect_notice">您的個人信息將會被保護</string>
+    <string name="hint_enter_feedback">請輸入反饋意見</string>
+    <string name="commit_succeeded">提交成功</string>
+    <string name="enter_mobile_or_email">請輸入電話號碼或者郵箱地址</string>
+    <string name="cancel_select">取消選擇</string>
+    <string name="no_file">沒有文件</string>
+    <string name="failed_sdcard">獲取SD卡失敗，請檢查後重試</string>
+    <string name="recorder_album">記錄儀相冊</string>
+    <string name="downloaded">已下載</string>
+    <string name="phone_ablum">手機相冊</string>
+    <string name="please_select_file">請選擇文件</string>
+    <string name="failed_to_load_click_Retry">加載失敗，點擊重試~~</string>
+    <string name="camera_isbusy">攝像頭忙碌中</string>
+    <string name="illegal_report">違章舉報</string>
+    <string name="change_picture">更改圖片</string>
+    <string name="illegal_report_notice">註：此違法舉報內容已超過72小時，交警不會受理，但可以上傳到roadcam曝光臺。</string>
+    <string name="lorry">貨車</string>
+    <string name="small_car">轎車</string>
+    <string name="car_type">車輛類型</string>
+    <string name="license_plate">車牌號碼</string>
+    <string name="enter_license_plate_number">請輸入車牌號</string>
+    <string name="contact_information">聯系人信息</string>
+    <string name="name">姓名</string>
+    <string name="show_bankcard_info">顯示銀行卡信息</string>
+    <string name="please_input_name">請輸入您的姓名</string>
+    <string name="input_phone_number">請輸入您的聯系電話</string>
+    <string name="edit_bankcard_info">編輯銀行卡信息</string>
+    <string name="illegal_time">違章時間</string>
+    <string name="committing">正在提交</string>
+    <string name="commit_need_net">上傳需要網絡，請確定您當前的網絡是可用的</string>
+    <string name="bank_card_info">銀行卡信息</string>
+    <string name="illegal_type">違章類型</string>
+    <string name="illegal_location">違章地點</string>
+    <string name="enter_time_violation">請輸入違章時間</string>
+    <string name="choose_location_violation">請選擇違章地點</string>
+    <string name="enter_your_mobile_phone">請輸入您的電話</string>
+    <string name="enter_name_bank_card">請輸入銀行卡開戶人姓名</string>
+    <string name="enter_id_number">請輸入銀行卡開戶人身份證號</string>
+    <string name="enter_bank_card_number">請輸入銀行卡號</string>
+    <string name="illegal_info">違章信息</string>
+    <string name="choose_illegal_type">請選擇違章類型</string>
+    <string name="no_bank_card_info">暫無銀行卡信息</string>
+    <string name="illegalActivity_name">姓　名:</string>
+    <string name="illegalActivity_id_card">身份證:</string>
+    <string name="illegalActivity_bank_card">卡　號:</string>
+    <string name="illegalActivity_bank">銀　行:</string>
+    <string name="wait_check">待審核</string>
+    <string name="checking">審核中</string>
+    <string name="check_rejected">審核駁回</string>
+    <string name="check_pass">審核通過</string>
+    <string name="switching_photo_mode">正在切換到拍照模式</string>
+    <string name="switching_record_mode">正在切換到錄制模式</string>
+    <string name="Opening_record">正在開啟錄制</string>
+
+    <string name="phonenumber_prompt">手機號：</string>
+    <string name="code_prompt">驗證碼：</string>
+    <string name="email_prompt">郵箱：</string>
+    <string name="password_prompt">密碼：</string>
+    <string name="re_confirm_password_prompt">確認密碼：</string>
+    <string name="problem_app">APP問題</string>
+    <string name="notnon_nickname">昵稱不能為空</string>
+    <string name="nickname_too_long">昵稱太長(最多16個字符/8個中文字)</string>
+    <string name="software_protocol">軟件協議</string>
+    <string name="successfully_saved_to">已保存至</string>
+    <string name="downloading_exit">正在下載，是否退出？</string>
+    <string name="register_sucess">註冊成功,請修改昵稱</string>
+    <string name="beyond_maximum">超出字數上限</string>
+
+    <string name="password_least_six">密碼不能少於6個字符</string>
+    <string name="sex">性別</string>
+    <string name="secrecy">保密</string>
+    <string name="man">男</string>
+    <string name="female">女</string>
+    <string name="set_sex">設置性別</string>
+    <string name="please_input_nickname">請輸入昵稱</string>
+    <string name="please_input_signature">請輸入個性簽名</string>
+    <string name="player_is_prepare">播放器準備中</string>
+    <string name="read_user_service">請先閱讀《歐果用戶服務條款》</string>
+    <string name="choose_country">選擇國家和地區</string>
+    <string name="country_not_support_currently">當前服務暫不支持此國家，請選擇其它國家</string>
+    <string name="country">國家/地區</string>
+    <string name="phone_not_empty">手機號不能為空</string>
+    <string name="validation_failed">驗證失敗</string>
+    <string name="set_password">設置密碼</string>
+    <string name="username_2_16_char">用戶為2到16個字符</string>
+    <string name="forget_password">忘記密碼？</string>
+    <string name="new_user">新用戶註冊</string>
+    <string name="please_stop_download">請先停止下載</string>
+    <string name="soft_protocol">《軟件協議》</string>
+    <string name="agree_with">我已閱讀並同意</string>
+    <string name="WeChat_client_not_installed">未安裝微信客戶端</string>
+    <string name="share_to">分享到%s</string>
+    <string name="my_share">我的分享</string>
+    <string name="myreport">我的舉報</string>
+    <string name="recommend">推薦</string>
+    <string name="wifi_password">AP密钥</string>
+    <string name="sound_recording">錄音</string>
+    <string name="time_watermark">攝像時間水印</string>
+    <string name="note_gsensor">當車輛發生碰撞，自動鎖定撞擊時的視頻不被覆蓋，用來提供事故依據</string>
+    <string name="camera_params">攝像頭參數</string>
+    <string name="set_status">正在設置狀態，請稍候。</string>
+    <string name="formatting">正在格式化</string>
+    <string name="photo_mode">拍照</string>
+    <string name="video_mode">錄像</string>
+    <string name="cyclic_video">循環視頻</string>
+    <string name="urgent_video">緊急視頻</string>
+    <string name="switch_failed">切換失敗</string>
+    <string name="start_record_failed">開啟錄制失敗</string>
+    <string name="signature_can_not_empty">簽名不能為空</string>
+    <string name="hardware_problem">硬件問題</string>
+    <string name="wifi_connect_no_camera">WIFI連接成功，但不是攝像頭</string>
+    <string name="not_support_comment">此動態不支持評論</string>
+    <string name="not_support_share">此資源不支持分享</string>
+    <string name="stop_recording_failed">停止錄制失敗</string>
+    <string name="no_wifi_result_notice">未掃描到WIFI\n請檢查是否未授權定位權限並開啟定位</string>
+    <string name="cyclic_record_time">循環錄制時間</string>
+    <string name="connect_other"><u>連接其它設備</u></string>
+    <string name="label_sd_error">請檢查SD卡</string>
+    <string name="snapshot">抓拍</string>
+    <string name="parking_monitor">停車監控</string>
+    <string name="camera_version">記錄儀軟件版本</string>
+    <string name="timing_capture">定時拍照</string>
+    <string name="sequence">連拍</string>
+    <string name="frequency">光源頻率</string>
+    <string name="send_to">發送至</string>
+    <string name="no_card_notice">請在記錄儀中\n插入TF存儲卡</string>
+    <string name="Video_resolution">視頻分辨率</string>
+    <string name="timelapse_record">縮時錄影</string>
+    <string name="slow_record">慢攝影</string>
+    <string name="cyclic_record">循環錄像</string>
+    <string name="mic">麥克風</string>
+    <string name="gyro_rsc">陀螺儀防抖</string>
+    <string name="date_stamping">日期標簽</string>
+    <string name="video_setting">視頻設置</string>
+    <string name="image_quality">圖像質量</string>
+    <string name="anti_shaking">防手震</string>
+    <string name="system_setting">系統設置</string>
+    <string name="exposure">曝光補償</string>
+    <string name="Field_of_view">攝像視野</string>
+    <string name="capture_setting">拍照設置</string>
+    <string name="rotate">旋轉</string>
+    <string name="aqus_mode">水下模式</string>
+    <string name="screensavers">屏幕保護</string>
+    <string name="auto_power_off">定時關機</string>
+    <string name="tv_mode">電視模式</string>
+    <string name="time_date">設置時間和日期</string>
+    <string name="beep_sound">按鍵聲音</string>
+    <string name="camera_language">記錄儀語言</string>
+    <string name="camera_wifi_setting">記錄儀WiFi設置</string>
+    <string name="camera_format">格式化記錄儀</string>
+    <string name="default_setting">恢復默認設置</string>
+    <string name="deleting">正在刪除...</string>
+    <string name="record">錄制</string>
+    <string name="open_record_failed">開啟錄制失敗</string>
+    <string name="wifi_ssid">SSID</string>
+    <string name="wifi_input_ssid">輸入wifi名稱</string>
+    <string name="ssid_too_short">您輸入的wifi名稱少於兩個字符 ，無法修改</string>
+    <string name="action_search">搜索</string>
+    <string name="action_not_download">未下載:</string>
+    <string name="is_loging">正在登錄...</string>
+    <string name="Two_input_password_error">兩次輸入的密碼不壹致，請重新輸入!</string>
+    <string name="action_Registered_successfully">註冊成功</string>
+    <string name="action_Are_logged_out">正在退出登錄..</string>
+    <string name="dialog_add_network_failed">添加網絡失敗!部分手機不支持自動連接功能，是否嘗試手動連接？</string>
+    <string name="delay_rec">延遲錄制</string>
+
+    <string name="cameras_permission">正在進行全景攝像頭授權驗證</string>
+    <string name="cameras_permission_fail">未能成功激活全景攝像頭</string>
+    <string name="clip">剪輯</string>
+    <string name="list">列表</string>
+
+    <string name="camera_disconnect">攝像頭連接斷開</string>
+    <string name="get_video_thumbnails">正在獲取視頻縮略圖，請稍候。</string>
+    <string name="select_operation_type">請選擇操作類型</string>
+    <string name="can_not_download">無法下載</string>
+    <string name="get_filelist_fail">獲取文件列表失敗</string>
+    <string name="only_support_1">必須大於1秒</string>
+    <string name="soft_decode">软解码</string>
+    <string name="hard_decode">硬解码</string>
+    <string name="start_record_first">請先開啟錄制</string>
+    <string name="hard_acceleration">硬件加速</string>
+    <string name="high_priview">高清預覽</string>
+    <string name="voice_broadcast_ban">語音播報</string>
+    <string name="cyclic_record_switch">循環錄像</string>
+    <string name="record_channel">录像通道</string>
+    <string name="record_mode">錄像通道</string>
+    <string name="monitoring_mode">監控模式(5fps)</string>
+    <string name="standard_mode">標準模式</string>
+    <string name="firmware_version">固件版本</string>
+    <string name="not_support_device">不支持的設備</string>
+    <string name="pano_mode">魚眼模式</string>
+    <string name="monitor_video">停車錄像</string>
+    <string name="delete_system_wifi">請去WLAN設置中刪除記錄儀Wi-Fi後重試.</string>
+
+    <string name="wifi_no_link">請先連接正確的攝像頭WIFI</string>
+    <string name="wifi_want_license">未能成功激活設備，請確保手機能正常上網，再重試</string>
+    <string name="wifi_license_success">激活成功，請連接到攝像頭WIFI</string>
+    <string name="permission_checkmessage">在設置 - 應用 - 權限中開啟%s權限，以正常使用WFCARDV360功能</string>
+    <string name="permission_request">權限申請</string>
+    <string name="to_set">去設置</string>
+    <string name="permission_location">位置信息</string>
+    <string name="permission_phone">電話</string>
+    <string name="permission_contacts">通訊錄</string>
+    <string name="permission_storage">存儲空間</string>
+    <string name="permission_camera">相機</string>
+    <string name="permission_microphone">麥克風</string>
+</resources>

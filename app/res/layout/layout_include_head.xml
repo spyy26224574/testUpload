@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_head"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/layout_include_title_height"
+              android:background="#ffffff"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_back_title_selector"/>
+
+    <TextView
+        android:id="@+id/head_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/Tirepressure_detection"
+        android:textColor="#fe9423"
+        android:textSize="20sp"/>
+
+    <!--     <Button
+            android:id="@+id/btn_partnership"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/pair"
+            android:visibility="invisible" /> -->
+    <ImageView
+        android:id="@+id/right_img"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:padding="5dp"
+        android:src="@drawable/title_setting"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/ib_exchange"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:src="@drawable/exchange"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_text"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="@string/send1"
+        android:textColor="@color/orange"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_text_two"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="@string/send1"
+        android:textColor="@color/orange"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <string name="photo_resolution">Photo Resolution</string>
+     <string name="video_resolution">Video Resolution</string>
+     <string name="loop_type">Loop Type</string>
+     <string name="interval">Interval</string>
+     <string name="snap_mode">Snap Mode</string>
+     <string name="snap_interval">Snap Interval</string>
+     <string name="photo_scene">Photo Scene</string>
+     <string name="time">Time</string>
+     <string name="rate">Rate</string>
+
+     <string-array name="video_resolution_entries_ntsc">
+         <item>720P/30fps</item>
+         <item>720P/60fps</item>
+         <item>720P/240fps</item>
+         <item>1080P/30fps</item>
+         <item>1080P/60fps</item>
+         <item>1080P/120fps</item>
+         <item>4K2K/30fps</item>
+     </string-array>
+     <string-array name="video_resolution_values_ntsc">
+         <item>720P_30</item>
+         <item>720P_60</item>
+         <item>720P_240</item>
+         <item>1080P_30</item>
+         <item>1080P_60</item>
+         <item>1080P_120</item>
+         <item>4K2K_30</item>
+     </string-array>
+     <string-array name="video_resolution_entries_pal">
+         <item>720P/25fps</item>
+         <item>720P/50fps</item>
+         <item>720P/240fps</item>
+         <item>1080P/25fps</item>
+         <item>1080P/50fps</item>
+         <item>1080P/120fps</item>
+         <item>4K2K/25fps</item>
+     </string-array>
+     <string-array name="video_resolution_values_pal">
+         <item>720P_25</item>
+         <item>720P_50</item>
+         <item>720P_240</item>
+         <item>1080P_25</item>
+         <item>1080P_50</item>
+         <item>1080P_120</item>
+         <item>4K2K_25</item>
+     </string-array>
+
+
+     <string name="field_of_view">Field of View</string>
+     <string-array name="field_of_view_entries">
+         <item>150°</item>
+     </string-array>
+     <string-array name="field_of_view_values">
+         <item>150</item>
+     </string-array>
+
+     <string name="video_mode">Video Mode</string>
+     <string-array name="video_mode_entries">
+         <item>NTSC</item>
+         <item>PAL</item>
+     </string-array>
+     <string-array name="video_mode_values">
+         <item>NTSC</item>
+         <item>PAL</item>
+     </string-array>
+
+     <string name="audio_codec">Audio Codec</string>
+
+
+     <string name="capture_settings">Capture Settings</string>
+     <string name="image_resolution">Image Resolution</string>
+     <string-array name="image_resolution_entries">
+         <item>1920*1080P</item>
+         <item>1280*720P</item>
+     </string-array>
+     <string-array name="image_resolution_values">
+         <item>1080P</item>
+         <item>720P</item>
+     </string-array>
+
+     <string name="burst_rate">Burst Rate</string>
+     <string-array name="burst_rate_entries">
+         <item>1s/3P</item>
+         <item>1s/5P</item>
+         <item>1s/6P</item>
+         <item>3s/9P</item>
+         <item>3s/18P</item>
+     </string-array>
+     <string-array name="burst_rate_values">
+         <item>1_3</item>
+         <item>1_5</item>
+         <item>1_6</item>
+         <item>3_9</item>
+         <item>3_18</item>
+     </string-array>
+
+     <string name="timelapse_interval">Timelapse Interval</string>
+     <string-array name="timelapse_interval_entries">
+         <item>1s</item>
+         <item>3s</item>
+         <item>5s</item>
+         <item>10s</item>
+         <item>30s</item>
+         <item>60s</item>
+     </string-array>
+     <string-array name="timelapse_interval_values">
+         <item>1</item>
+         <item>3</item>
+         <item>5</item>
+         <item>10</item>
+         <item>30</item>
+         <item>60</item>
+     </string-array>
+
+     <string name="timer_count_down">Timer Count Down</string>
+     <string-array name="timer_count_down_entries">
+         <item>1s</item>
+         <item>3s</item>
+         <item>5s</item>
+         <item>10s</item>
+         <item>30s</item>
+         <item>60s</item>
+     </string-array>
+     <string-array name="timer_count_down_values">
+         <item>1</item>
+         <item>3</item>
+         <item>5</item>
+         <item>10</item>
+         <item>30</item>
+         <item>60</item>
+     </string-array>
+
+
+     <string name="image_settings">Image Settings</string>
+     <string name="image_upsidedown">Image Upsidedown</string>
+     <string name="spot_metering">Spot Metering</string>
+     <string name="time_tag">Time OSD</string>
+
+
+     <string name="sd_card_settings">SD Card Settings</string>
+     <string name="delete_all_files">Delete All Files</string>
+     <string name="format_sd_card">Format SD Card</string>
+
+     <string name="wifi_settings">WIFI Settings</string>
+     <string name="wifi_ssid">Change WIFI SSID</string>
+     <string name="wifi_password">Change WIFI Password</string>
+
+
+     <string name="control_settings">Control Settings</string>
+     <string name="boot_action">Boot Action</string>
+     <string-array name="boot_action_entries">
+         <item>Idle</item>
+         <item>Record</item>
+         <item>Timelapse</item>
+     </string-array>
+     <string-array name="boot_action_values">
+         <item>idle</item>
+         <item>record</item>
+         <item>timelapse</item>
+     </string-array>
+
+     <string name="auto_shutdown">Auto Shutdown</string>
+     <string-array name="auto_shutdown_entries">
+         <item>Off</item>
+         <item>1min</item>
+         <item>5min</item>
+         <item>10min</item>
+         <item>30min</item>
+         <item>60min</item>
+     </string-array>
+     <string-array name="auto_shutdown_values">
+         <item>0</item>
+         <item>1</item>
+         <item>5</item>
+         <item>10</item>
+         <item>30</item>
+         <item>60</item>
+     </string-array>-->
+
+    <string-array name="screen_auto_sleep_entries">
+        <item>OFF</item>
+        <item>1min</item>
+        <item>3min</item>
+        <item>5min</item>
+    </string-array>
+    <integer-array name="screen_auto_sleep_values">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </integer-array>
+
+    <!--<string name="screen_brightness">Screen Brightness</string>
+    <string-array name="screen_brightness_entries">
+        <item>100％</item>
+        <item>60％</item>
+        <item>30％</item>
+    </string-array>
+    <string-array name="screen_brightness_values">
+        <item>55</item>
+        <item>50</item>
+        <item>45</item>
+    </string-array>
+
+    <string name="poweron_ui_mode">Power on UI mode</string>
+    <string-array name="poweron_ui_mode_entries">
+        <item>Record</item>
+        <item>Snapshot</item>
+        <item>Timelapse</item>
+        <item>Timer</item>
+        <item>Burst</item>
+    </string-array>
+    <string-array name="poweron_ui_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="led_flicker">LED Flicker</string>
+    <string name="buzzer_prompt">Beep Prompt</string>
+
+
+
+    <string name="system_settings">System Settings</string>
+    <string name="set_datetime">Set Phone Time to Camera</string>
+    <string name="restore_settings">Restore Factory Settings</string>
+    <string name="about_camera">About Camera and Client</string>
+
+
+
+    <string name="local_settings">Local Settings</string>
+
+    <string name="download_video">Download Video</string>
+    <string-array name="download_video_entries">
+        <item>High Definition</item>
+        <item>Low Definition</item>
+    </string-array>
+    <string-array name="download_video_values">
+        <item>Big</item>
+        <item>Small</item>
+    </string-array>
+
+    <string name="preview_video">Preview Video</string>
+    <string-array name="preview_video_entries">
+        <item>High Definition</item>
+        <item>Low Definition</item>
+    </string-array>
+    <string-array name="preview_video_values">
+        <item>Big</item>
+        <item>Small</item>
+    </string-array>
+
+    <string name="sound_prompt">Sound Prompt</string>-->
+
+</resources>

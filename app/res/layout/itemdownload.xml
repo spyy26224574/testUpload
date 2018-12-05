@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="72dp" >
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/showphoto" />
+        
+		<ImageView 
+		    android:id="@+id/down_lock"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="20dp"
+		    android:layout_height="20dp"
+		    android:src="@drawable/password"/>
+        <!--
+        <com.example.listview.RateTextCircularProgressBar
+            android:id="@+id/rcp_progressbar"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" >
+        </com.example.listview.RateTextCircularProgressBar>
+        -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/unload_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="dsagasgdsa"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/item_tv_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="asdgvd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/unload_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="asdgvdsafgdaf"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.adai.gkdnavi.view.ProgressCircleView
+            android:id="@+id/item_btn_download"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/download_item_bg"
+            android:clickable="true" >
+        </com.adai.gkdnavi.view.ProgressCircleView>
+    </RelativeLayout>
+
+</RelativeLayout>

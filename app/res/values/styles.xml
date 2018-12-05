@@ -1,0 +1,174 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- <item name="android:actionModeCloseButtonStyle">@style/NoCloseButton</item> -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme_two" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="styleLoadingLayout">@style/LoadingLayoutStyle</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- <item name="android:actionModeCloseButtonStyle">@style/NoCloseButton</item> -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textCursorDrawable">@drawable/edit_cursor_color</item>
+    </style>
+
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="AppFullScreenTheme" parent="AppTheme_two">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="LoadingLayoutStyle" parent="LoadingLayout.Style">
+        <item name="llEmptyImage">@drawable/empty</item>
+        <item name="llErrorImage">@drawable/error</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+
+    <!-- 最外层样式 -->
+
+
+    <!-- 共用层样式 -->
+
+
+    <!-- 上圆角样式 -->
+
+
+    <!--无圆角样式  -->
+
+    <!-- 下圆角样式 -->
+
+
+    <!-- 增加的代码 -->
+
+
+    <!-- 全圆角样式 -->
+
+
+    <!-- textview样式  -->
+
+
+    <!-- 文本右边箭头样式 -->
+
+
+    <!-- view分割线样式 -->
+
+
+    <style name="Crop"/>
+
+    <style name="Crop.DoneCancelBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/crop__bar_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:divider">@drawable/crop__divider</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">12dp</item>
+        <item name="android:background">@color/crop__button_bar</item>
+    </style>
+
+    <style name="Crop.ActionButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/crop__selectable_background</item>
+    </style>
+
+    <style name="Crop.ActionButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">20dp</item> <!-- Offsets left drawable -->
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/crop__button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Crop.ActionButtonText.Done">
+        <item name="android:drawableLeft">@drawable/crop__ic_done</item>
+        <item name="android:text">@string/confirm</item>
+    </style>
+
+    <style name="Crop.ActionButtonText.Cancel">
+        <item name="android:drawableLeft">@drawable/crop__ic_cancel</item>
+        <item name="android:text">@string/cancel</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CamDialog">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CamDialog.Title">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">#282828</item>
+    </style>
+
+    <style name="NoBackgroundDialog" parent="Animation.AppCompat.Dialog">
+
+        <item name="android:windowFrame">@null</item>
+        <!--最后面是window background-->
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--这个不设置它会沾满屏幕-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 设置contentview的背景图-->
+        <item name="android:background">@drawable/transparent</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="switchButtonStyle">
+        <item name="com.ligo.awfcardv:kswBackDrawable">@drawable/ios_back_drawable</item>
+        <item name="com.ligo.awfcardv:kswThumbDrawable">@drawable/ios_thumb_selector</item>
+        <item name="com.ligo.awfcardv:kswBackMeasureRatio">1.4</item>
+        <item name="com.ligo.awfcardv:kswThumbMarginBottom">-8dp</item>
+        <item name="com.ligo.awfcardv:kswThumbMarginLeft">-5dp</item>
+        <item name="com.ligo.awfcardv:kswThumbMarginRight">-5dp</item>
+        <item name="com.ligo.awfcardv:kswThumbMarginTop">-2.5dp</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="AppTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+</resources>

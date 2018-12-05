@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_background"
+    tools:context="com.adai.gkdnavi.CountryCodeActivity">
+
+    <include layout="@layout/layout_include_head"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <android.support.v7.widget.SearchView
+        android:id="@+id/sv"
+        android:queryHint="@string/action_search"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.sms.widget.CountryListView
+        android:id="@+id/clv"
+        android:background="@color/transparent_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

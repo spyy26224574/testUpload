@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_get_video_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.adai.gkdnavi.GetVideoFrameActivity">
+
+    <include layout="@layout/layout_include_head"/>
+
+    <FrameLayout
+        android:id="@+id/fl_video_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.ijk.media.widget.media.IjkVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/video_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="00:00"/>
+
+    <com.adai.gkdnavi.view.CustomSeekBar
+        android:id="@+id/customSeekBar"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:progressDrawable="@color/transparent_"
+        android:thumb="@drawable/seekbar_thumb_line"
+        android:layout_width="match_parent"
+        android:progress="0"
+        android:max="100"
+        android:thumbOffset="0dp"
+        android:layout_height="42dp"/>
+</LinearLayout>

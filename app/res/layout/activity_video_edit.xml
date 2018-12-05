@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditVideoActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_include_title_height"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_back_title_selector" />
+
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#fe9423"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="@string/send1"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black">
+
+        <com.ijk.media.widget.media.IjkVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/video_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/video_time"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:layout_gravity="top|right"
+            android:layout_margin="10dp"
+            android:text="00:00"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/video_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/video_play" />
+    </FrameLayout>
+
+    <com.adai.gkdnavi.view.MaterialRangeSlider
+        android:id="@+id/seek_slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layerType="software"
+        app:insideRangeLineColor="@color/orange"
+        app:insideRangeLineStrokeWidth="4dp"
+        app:outsideRangeLineColor="@color/gray_lite"
+        app:outsideRangeLineStrokeWidth="4dp"
+        app:pressedTargetRadius="10dp"
+        app:shadowColor="#55000000"
+        app:targetColor="@color/orange"
+        app:unpressedTargetRadius="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingRight="@dimen/left_margin">
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="00:00:00" />
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00:00:00" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="00:00:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seek_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/voice_selector"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/original_sound"
+                android:textColor="@color/main_tab_host_title_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/cut_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/video_cut_selector"
+                android:padding="5dp"
+                android:text="@string/clip_select_clip"
+                android:textColor="@color/main_tab_host_title_color" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        android:text="@string/only_support_5_15" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <RadioGroup
+            android:id="@+id/music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/left_margin">
+
+            <RadioButton
+                android:id="@+id/music_none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/mp_none_selector"
+                android:gravity="center_horizontal"
+                android:text="无"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp1_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/brisk"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp2_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/hometown"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp3_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/strong_wind"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp4_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/nervous"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp5_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/eagle"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp6_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/warmth"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp7_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/electro"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp8_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/pop"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp9_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/soft_rock"
+                android:textColor="@color/main_radio_text_color" />
+
+            <RadioButton
+                android:id="@+id/music_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:button="@null"
+                android:drawableTop="@drawable/mp10_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/sax"
+                android:textColor="@color/main_radio_text_color" />
+        </RadioGroup>
+    </HorizontalScrollView>
+</LinearLayout>

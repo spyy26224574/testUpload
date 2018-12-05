@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bladeview_fontsize">10dip</dimen>
+
+    <!-- 胎压页面 -->
+    <dimen name="layout_include_title_height">48dp</dimen>
+    
+    <!-- 导航地图页面 -->
+    <!-- 广场 -->
+    <dimen name="line_space_height">8dp</dimen>
+    <dimen name="left_margin">10dp</dimen>
+    <dimen name="left_padding">16dp</dimen>
+
+    <dimen name="crop__bar_height">56dp</dimen>
+    <dimen name="dimen_.5">0.5dp</dimen>
+</resources>

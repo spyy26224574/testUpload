@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_illegal_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_lite"
+    android:orientation="vertical"
+    tools:context="com.adai.gkdnavi.IllegalTypeActivity">
+
+    <include layout="@layout/layout_include_head"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="请选择违章类型："
+        android:textColor="@color/gray"/>
+
+    <ListView
+        android:id="@+id/lv_illegal_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:choiceMode="singleChoice"
+        >
+    </ListView>
+</LinearLayout>

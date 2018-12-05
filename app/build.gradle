@@ -1,0 +1,155 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':XUtils_Lib')
+    compile project(':medialib')
+    compile files('libs/org.apache.http.legacy.jar')
+    //    compile(name: 'ijkplayer-armv5-release', ext: 'aar')
+    //    compile(name: 'ijkplayer-armv7a-release', ext: 'aar')
+    //    compile(name: 'ijkplayer-exo-release', ext: 'aar')
+//    compile(name: 'ijkplayer-java-release', ext: 'aar')
+    compile files('libs/ijkplayer-java-release.jar')
+    compile 'pub.devrel:easypermissions:0.3.1'
+    compile('com.android.support:appcompat-v7:23.0.1') {
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+    }
+    //    compile 'com.android.support:support-annotations:23.0.1'
+    //    compile 'com.android.support:support-v4:23.4.0'
+    //    compile 'com.github.chrisbanes:PhotoView:1.3.0'
+    compile files('libs/open_sdk_r5756_lite.jar')
+    compile files('libs/weibosdkcore_release.jar')
+    compile project(':oss-android-sdk')
+//    compile files('libs/MobTools-2017.0607.1736.jar')
+//    compile files('libs/MobCommons-2017.0607.1736.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/wificammobilesdk.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.android.exoplayer:exoplayer:r1.5.8'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile 'com.umeng.analytics:analytics:6.1.3'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.4.0'
+    compile 'com.kyleduo.switchbutton:library:1.4.6'
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    //    compile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    compile 'com.google.code.gson:gson:2.8.2'
+
+//    compile(name: 'netcheck', ext: 'aar')
+//    compile files('libs/netcheck.jar')
+//    compile(name: 'DVControl_V0.8.0-release', ext: 'aar')
+//    compile files('libs/DVControl_V0.9.0-release.jar')
+    compile(name: 'CoverFlow_V1.0-release', ext: 'aar')
+    compile(name: 'coverflow-v1.0.2', ext: 'aar')
+//    compile(name: 'MPChartLib-r0109', ext: 'aar')
+
+//    compile(name: 'shareLibrary-release', ext: 'aar')
+//    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.daimajia.numberprogressbar:library:1.4@aar'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.shizhefei:ViewPagerIndicator:1.1.4'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile 'com.roughike:bottom-bar:2.2.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.bm.photoview:library:1.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.5'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    compile 'gdut.bsx:share2:0.9.3'
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.2'
+
+    defaultConfig {
+        applicationId "com.ligo.awfcardv"
+        multiDexEnabled true
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1080
+        versionName "1.0.8"
+    }
+
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'wffcardv360'
+            keyPassword 'Abcd123456'
+            storeFile file('./wfcardv360.keystore')
+            storePassword 'Abcd1234'
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField("boolean", "LIGO_LOG", "true")
+            signingConfig signingConfigs.releaseConfig
+        }
+        release {
+            buildConfigField("boolean", "LIGO_LOG", "false")
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    packagingOptions {
+        exclude 'assets/lineDashTexture.png'
+        exclude 'android.support.annotation'
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(output.outputFile.parent, "wffcardv360-" + buildType.name +
+                    defaultConfig.versionName + ".apk");
+        }
+    }
+}

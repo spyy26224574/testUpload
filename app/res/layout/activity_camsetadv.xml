@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/camset_advset"
+        android:textColor="#fe9423"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/camadvset_gsensor"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_xingche"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="@string/camset_gsensor_level"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/jiantouslide" />
+
+        <TextView
+            android:id="@+id/cam_sensor_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gsensor_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/gsensor_setting_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/gsensor_off"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="@string/close"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/gsensor_low"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="@string/low"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/gsensor_med"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="@string/middle"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/gsensor_high"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/high"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camadvset_tvmodel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/selector_xingche"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="@string/tv_mode"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cam_palntsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/jiantouslide" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tvmodel_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/tvmodel_setting_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tvmodel_ntsc"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="NTSC"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/tvmodel_pal"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="PAL"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camadvset_filetime"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/selector_xingche"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="@string/camset_rec_time"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cam_filetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView3"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/jiantouslide" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/filetime_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/filetime_setting_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/filetime_off"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="@string/close"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/filetime_3"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="@string/three_minute"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/filetime_5"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="@string/five_minute"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/filetime_10"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/ten_minute"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camadvset_sdformat"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/selector_xingche"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="@string/camset_format"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/camadvset_factory"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="@string/camset_recovery"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

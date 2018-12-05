@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">WFCARDV360</string>
+    <string name="searching">正在搜索..</string>
+    <string name="action_delete">Apagar</string>
+    <!--<string name="app_id">8478347</string>-->
+    <string name="remote">Gravador</string>
+    <string name="photo">Imagem</string>
+    <string name="video">Video</string>
+    <string name="phone">Telefone</string>
+    <!-- index -->
+    <!-- setting -->
+    <string name="set_isneedformat">Confirma a formatação da gravação</string>
+    <!-- bluetooth -->
+    <string name="disconnect">Desconectar</string>
+    <string name="please_wait">Por favor aguarde</string>
+    <!-- navi  -->
+    <string name="navi_confDel">Do you want to delete it?</string>
+    <string name="noNetWork">There are not  Network</string>
+
+
+    <!--
+        "无", "自车", "左转", "右转", "左前方行驶",
+		"右前方行驶", "左后方行驶", "右后方行驶", "左转掉头", "直行", "到达途经点", "进入环岛", "驶出环岛",
+		"到达服务区", "到达收费站", "到达目的地", "进入隧道", "靠左", "靠右", "通过人行横道", "通过过街天桥",
+		"通过地下通道", "通过广场", "到道路斜对面"
+    -->
+    <!-- telephone -->
+    <!-- wifi camera -->
+    <string name="wifi_stoprecordingbef">Por favor pare a gravação</string>
+    <string name="wifi_downloading">Download</string>
+    <string name="wifi_waitdownload">Aguardando</string>
+    <string name="wifi_continuedownload">Continue o download</string>
+    <string name="wifi_retrydownload">Tente novamente</string>
+    <string name="wifi_pausedownload">Suspenso, clique em continuar para download</string>
+    <string name="wifi_stopwarning">Atenção</string>
+    <string name="wifi_checkmessage">Você deseja conectar a camera?</string>
+    <string name="saved_successfully">Salvo com sucesso</string>
+    <string name="wifi_system_reset_success">Restauração de configuração de fábrica bem sucedida</string>
+    <string name="wifi_format_sd_success">Formatação bem sucedida</string>
+    <string name="wifi_system_reset_failure">Falha na Restauração de Configuração do sistema</string>
+    <string name="wifi_format_sd_failure">Falha na formatação</string>
+    <string name="wifi_connecting">Conexão, por favor tente mais tarde</string>
+    <!-- 语音合成 -->
+    <!-- 摄像头设置 -->
+    <string name="camset_name">Modifique o nome</string>
+    <string name="camset_original_name">Nome original:</string>
+    <string name="camset_setpwd">Configure o nome do gravador</string>
+    <string name="camset_autorec">Auto gravação</string>
+    <string name="camset_motiondetection">Detecção de movimento</string>
+    <string name="camset_recquality">Qualidade da gravação</string>
+    <string name="camset_pip">PIP</string>
+    <string name="camset_format">Formatar</string>
+
+
+    <string name="camset_advset">Configuração avançada</string>
+    <string name="camset_gsensor_level">Sensível ao impacto</string>
+    <string name="camset_rec_time">O tempo do arquivo de gravação</string>
+    <string name="camset_recovery">Restauração de fábrica </string>
+    <string name="camset_recovery_question">Confirma a restauração de fábrica?</string>
+    <string name="wifi_camera_storage">O cartão de memória está cheio!</string>
+    <string name="wifi_name_modified_successfully">Modificação de nome bem sucedida</string>
+    <string name="wifi_name_modified_fail">Falha na modificação de nome</string>
+    <string name="wifi_sdcard">Sem cartão de memória, por favor insira um cartão de memória</string>
+    <string name="wifi_password_modified_successfully">Modificação de senha bem sucedida</string>
+    <string name="wifi_password_modified_fail">Modificação de senha falhou </string>
+    <!-- 版本检测   tan -->
+    <string name="not_get_the_current_version_information">Não obteve as informações da versão atual</string>
+    <string name="no_access_the_server_information">Não há acesso às informações do servidor</string>
+    <string name="failed_to_get_server_information">Falha ao obter informações do servidor</string>
+    <string name="current_is_last_version">Versão atual</string>
+    <string name="ota_downtitle">Gerenciador de download</string>
+    <string name="newcheckversion">Última versão</string>
+    <string name="Updatecontent">Atualize prompt</string>
+    <string name="Immediateupdates">Atualize</string>
+    <string name="Lateron">Próximo</string>
+    <string name="nonetwork">Sem acesso à internet</string>
+    <string name="download_newversion_failed">Falha no download da nova versão</string>
+    <string name="ota_downloading">Download...</string>
+    <string name="ota_nowpercent">Progresso atual:</string>
+    <string name="ota_predownload">Pronto para download</string>
+    <string name="ota_serviceexp">Exceção do servidor, por favor, tente de novo.</string>
+    <string name="ota_netorserexp">Rede ou servidor incomum, por favor, tente mais tarde</string>
+    <!--wifi 连接-->
+    <string name="list_wifi_name">Wi-fi próximos</string>
+    <string name="wifi_add_connect">Adicionar</string>
+    <string name="wifi_input_password">Por favor, insira a senha!</string>
+    <string name="wifi_least_password">Senha com mais de 3 dígitos</string>
+    <string name="wifi_choose">Por favor, selecione a sua conexão de Wi-fi</string>
+    <!-- 关于  tan -->
+    <string name="version_detection">Checar atualização</string>
+    <string name="ok">Ok</string>
+    <string name="confirm_password">Confirme a senha</string>
+    <string name="enter_password">Insira a nova senha</string>
+    <string name="password_inconsistent">Esta senha não corresponde à senha introduzida acima.</string>
+    <string name="password_too_short">A senha inserida tem menos de 8 dígitos, não pode ser modificada</string>
+    <string name="close">Fechar</string>
+    <string name="low">Baixo</string>
+    <string name="middle">Médio</string>
+    <string name="high">Alto</string>
+    <string name="three_minute">3 minutos</string>
+    <string name="five_minute">5 minutos</string>
+    <string name="ten_minute">10 minutos</string>
+    <string name="confirm">Confirma</string>
+    <string name="cancel">Cancela</string>
+    <!-- 文件管理 -->
+    <string name="wheter_delete_file">Quer apagar este arquivo ou arquivos?</string>
+    <string name="wheter_stop_record">Os arquivos de navegação pararão a gravação, quer continuar?</string>
+    <string name="loading">Carregando...</string>
+    <!-- 设置 -->
+    <string name="menu_quit">Sair</string>
+    <!-- 注册和登录 -->
+    <string name="login">Login</string>
+    <string name="phonenumber">Celular</string>
+    <string name="email">E-mail</string>
+    <string name="emailerror">Erro ao formatar e-mail</string>
+    <string name="enter_phonenumber">Telefone</string>
+    <string name="enter_email">E-mail</string>
+    <string name="enter_code">Código</string>
+    <string name="password">Senha</string>
+    <string name="re_enter_password">Senha</string>
+    <string name="enter_password_again">Novamente</string>
+    <string name="register">Registro</string>
+    <string name="re_confirm_password">Confirme a senha</string>
+    <string name="immediately_register">Registre imediatamente</string>
+    <string name="account_password_notification">Conta e senha não podem estar em branco!</string>
+    <string name="hasregister">O usuário foi registrado</string>
+    <string name="usernotfound">O usuário não foi encontrado</string>
+    <string name="userorpwderror">Erro: Usuário ou senha incorretos</string>
+    <string name="reset">Redefinir</string>
+    <string name="code">Código</string>
+    <string name="sendcode">Obtenha o código</string>
+    <string name="codenotifysucess">O código de verificação foi enviado para "%1$s". Por favor, verifique o email</string>
+    <string name="resendcode">Reenviar(%02d)</string>
+    <string name="resendtext">Reenviar</string>
+    <string name="codetimeout">Código de verificação inválido</string>
+    <string name="codeerror">Erro no código de verificação</string>
+    <!-- 消息中心 -->
+    <string name="msg_center_no_download_files">Não há arquivos, por favor, tire fotos novamente</string>
+    <string name="msg_center_downloading_files">Baixando fotos...</string>
+    <string name="msg_center_requst_files">Obtendo arquivo de imagens...</string>
+    <string name="msg_center_stop_recording">Parar gravação...</string>
+
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>Escaneando\u2026</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>Conectando\u2026</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>Autenticando\u2026</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>Obtendo endereço de IP\u2026</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>Conectado</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>Suspenso</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>Desconectando\u2026</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>Desconectado</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>Sem sucesso</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>Bloqueado</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>Evitando temporariamente conexão ruim</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <skip />
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>Escaneando\u2026</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>Conectando ao<xliff:g id="network_name">%1$s</xliff:g>\u2026</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>Autenticando com <xliff:g id="network_name">%1$s</xliff:g>\u2026</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>Obtendo endereço de IP de <xliff:g id="network_name">%1$s</xliff:g>\u2026</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>Conectado ao <xliff:g id="network_name">%1$s</xliff:g></item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>Suspenso </item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>Desconectando de <xliff:g id="network_name">%1$s</xliff:g>\u2026</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>Desconectado</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>Sem sucesso </item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>Bloqueado </item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>Evitando temporariamente conexão ruim</item>
+    </string-array>
+
+    <string name="network_timeout">network exception</string>
+
+    <string name="permissiontext">Open<xliff:g id="permission">%1$s</xliff:g>Failed, please check whether the disabled<xliff:g id="permission1">%1$s</xliff:g>permission</string>
+
+    <string name="setting">Configurações</string>
+
+
+    <string name="update">Atualize</string>
+    <string name="latest_version">It\'s already the latest version</string>
+    <string name="get">got it</string>
+    <string name="collection">coleção</string>
+    <string name="Tirepressure_detection">TirePressure detection</string>
+    <string name="progress_display">Exibição de progresso</string>
+    <string name="no_wifi">Sem conexão Wi-fi</string>
+    <string name="send1">Enviar</string>
+    <string name="deleted_success">Exclusão concluída com sucesso</string>
+    <string name="no_data">Sem dados</string>
+    <string name="no">Não</string>
+    <string name="save">Salvar</string>
+    <string name="deleted_failure">Falha ao excluir, por favor verifique conexão</string>
+    <string name="upload_failed">Upload failed, please check the network</string>
+    <string name="exit_program">Again according to exit the program</string>
+    <string name="in_the_buffer">Está no buffer...</string>
+    <string name="Check_connection">Verifique a conexão!</string>
+    <string name="Abnormal_play">funcionamento Anormal!</string>
+    <string name="In_the_download">Baixando...</string>
+    <string name="test_version">Is testing the version number</string>
+    <string name="are_surveillance_cameras">Agrimensura cámara conectando</string>
+    <string name="check_camera_connect_fails">Compruebe la cámara conectarse falla, si conectar inmediatamente?</string>
+    <string name="check_upgrade">Verifique atualização</string>
+    <string name="Modify_success">Modificação realizada</string>
+    <string name="Modify_failure">Falha na modificação</string>
+    <string name="request_failed">O pedido falhou, por favor, tente novamente</string>
+    <string name="Password_mistake">Erro na senha, não conectado</string>
+    <string name="Add_network_failure">Falha ao adicionar nova conexão</string>
+    <string name="Abnormal_request">El servidor de la conexion es anormal.Por favor, Compruebe la conexión de red</string>
+    <string name="Are_connected_camera">Câmera conectada...</string>
+    <string name="Application_version">Versão de aplicação</string>
+    <string name="Camera_version">Versão de câmera</string>
+    <string name="Model">Modelo</string>
+    <string name="Download_file_list">Baixe a lista de arquivos</string>
+    <string name="mine">Meu</string>
+    <string name="nickname">Apelido</string>
+    <string name="open">Abrir</string>
+    <string name="background_download">Baixar plano de fundo</string>
+    <string name="Cancel_download">Cancelar o download</string>
+    <string name="storage_full">O espaço de armazenamento de fotos está cheio!</string>
+    <string name="other">Outros</string>
+    <string name="only_letters_numbers">Nombre de usuario error de formato</string>
+    <string name="ap_checkmessage">No conectado a la Cámara, ya sea para conectar?\ N AP se Apagar WiFi</string>
+    <string name="access_camera_state">Acessando o estado</string>
+    <string name="access_camera_state_failed">Falha de status</string>
+    <string name="Online_preview_may_not_be_smooth">The firmware online preview may not be smooth, whether to continue to play?</string>
+    <string name="transmitting">Transmitindo</string>
+    <string name="restart_for_update">Reinicia a atualização do seu dispositivo</string>
+    <string name="transmission_failure">Falha na transmisão</string>
+    <string name="upgrade">Atualização</string>
+    <string name="download_failure">Falha no download</string>
+    <string name="downloading">Baixando</string>
+    <string name="install">Instalar</string>
+    <string name="getting_server_information">Getting Server informationg...</string>
+
+    <!-- 广场 -->
+    <string name="show_all">Mostrar todo</string>
+    <string name="soft_name">Nome do App</string>
+    <string name="manufacturer">Fabricante</string>
+
+    <!--高德-->
+    <string name="signature">Assinatura</string>
+    <string name="set_success">Configuração realizada</string>
+    <string name="set_failure">Falha na configuração</string>
+    <string name="select">Selecione</string>
+    <string name="reply">Responder</string>
+    <string name="please_input_reply">Por favor, ensira a resposta</string>
+    <string name="no_files_found">Arquivos não encontrados</string>
+    <string name="notice">Atenção</string>
+    <string name="nextstep">próximo passo</string>
+    <string name="msg_no_camera">Camera não encontrada</string>
+    <string name="msg_maxi_capacity">A seleção de fotos chegou ao limite</string>
+    <string name="getting_recording_status">Obtendo status de gravação...</string>
+    <string name="getting_filelist">Obtendo lista de arquivos</string>
+    <string name="failed_stop_recording">Falha em parar gravação. Deseja tentar novamente?</string>
+    <string name="failed_get_recording_status">Falha ao obter status de gravação. Deseja tentar novamente?</string>
+    <string name="failed_get_filelist">Falha ao obter a lista de arquivos. Você deseja tentar de novo?</string>
+    <string name="download_cuccess">Download realizado</string>
+    <string name="delete_all_file_notice">A ação irá interromper temporariamente a gravação e apagar todas as fotos e videos exceto os arquivos bloqueados. Deseja continuar?</string>
+    <string name="connecting_camera">Conectando a camera</string>
+    <string name="connect_time_out_check_connect_mode">Por favor, verifique se a câmera esta ligada ou o modo de conexão está correto.</string>
+    <string name="commit_num">Confirma(%1$d/%2$d)</string>
+    <string name="commit">enviar</string>
+    <string name="beta_version_have_risk">A versão de segurança, por favor, atualize com atenção, se necessário, entre em contato com o atendimento ao cliente</string>
+    <string name="all_delete">Deletar tudo</string>
+    <string name="VideoView_error_text_unknown">Erro de carregamento</string>
+    <string name="version_info">Informação de versão</string>
+    <string name="feedback">Retorno</string>
+    <string name="submit">Enviar</string>
+    <string name="whether_submit_crash_log">Presentar el accidente log</string>
+    <string name="need_customer_service">Pongase en contacto con servicio al cliente</string>
+    <string name="theme"> Assunto</string>
+    <string name="something_to_say">Diga algo</string>
+    <string name="problem_app">App problema</string>
+    <string name="problem_other">Outros problemas</string>
+    <string name="add_attention">Adicionar ponto de atenção</string>
+    <string name="already_attention">Já observado</string>
+    <string name="personal_info">Informação Pessoal</string>
+    <string name="title_fans">ventilação</string>
+    <string name="title_concern">Referência</string>
+    <string name="take_photo">Tirar foto</string>
+    <string name="photo_album">Álbum</string>
+    <string name="all_photo">Todas as fotos</string>
+    <string name="format_reviewnum">Total de %d comentários</string>
+    <!-- photo picker-->
+    <string name="preview">Preview</string>
+
+    <string name="crop__wait">Por favor aguarde…</string>
+    <string name="crop__pick_error">Não há imagens disponíveis</string>
+
+    <string name="all_photos">Todas as fotos</string>
+    <string name="auto">Automático</string>
+    <string name="avatar">Avatar</string>
+    <string name="brisk">Dinâmico</string>
+    <string name="cancel_collect">Cancelar coleção</string>
+    <string name="clip_select_clip">Clipe selecionado</string>
+    <string name="clip_video">Video clipe</string>
+    <string name="collection_list">Lista de favoritos</string>
+    <string name="color">Cor</string>
+    <string name="current_channel_tag">Canal atual</string>
+    <string name="cut_video_share">o video atual para a câmera, por favor, corte o vídeo e depois compartilhe</string>
+    <string name="cut_video_first">Por favor, editar o primeiro vídeo</string>
+    <string name="cut_warning_text">O compartilhamento do vídeo levará 1-2 minutos, por favor aguarde...</string>
+    <string name="day_ago">Dia atrás</string>
+    <string name="daylight">Luz do dia</string>
+    <string name="default_ago">Agora</string>
+    <string name="download_error">Falha no download</string>
+    <string name="dynamic">Dinâmico</string>
+    <string name="eagle">Águia</string>
+    <string name="electro">Elétrico</string>
+    <string name="fans_list">Lista de favoritos</string>
+    <string name="floor">Chão</string>
+    <string name="fluoresent">Fluorescente</string>
+    <string name="format_browsenum">%d Mostra de tempo</string>
+    <string name="has_canceled_collection">Cancelada a coleção</string>
+    <string name="has_collected">Já coletado</string>
+    <string name="hint_share">Neste momento</string>
+    <string name="homepage">Página inicial</string>
+    <string name="hometown">Cidade</string>
+    <string name="hour_ago">Uma hora atrás</string>
+    <string name="input_description">Descrição de entrada</string>
+    <string name="input_error">Erro de entrada</string>
+    <string name="intrusive_advertising">Publicidade intrusiva</string>
+    <string name="location_share">Compartilhar localização</string>
+    <string name="minute_ago">Minuto atrás</string>
+    <string name="month_ago">Monocromático</string>
+    <string name="my_qr_code">Meu QrCode</string>
+    <string name="nervous">nervous</string>
+    <string name="newest">Mais novo</string>
+    <string name="obscene">Obsceno</string>
+    <string name="olitical_sensitivities">Sensibilidade política</string>
+    <string name="only_share_one_video">Apenas um vídeo pode ser compartilhado por vez. Por favor, escolha de novo</string>
+    <string name="only_support_5_15">Suporta apenas videos de 5 a 15 segundos para compartilhamento</string>
+    <string name="original_sound">Som original</string>
+    <string name="personalized_signature">Assinatura personalizada</string>
+    <string name="phonenum_error">Erro no formato do número de telefone</string>
+    <string name="photo_resolution">Resolução</string>
+    <string name="please_clear_files">Muitos arquivos irão afetar a velocidade do equipamento, por favor, vá até o gerenciamento de arquivos e faça uma limpeza</string>
+    <string name="pop">Pop</string>
+    <string name="praise_list">Lista de elogios</string>
+    <string name="public_str">Público</string>
+    <string name="recorder_video">Gravação de vídeo</string>
+    <string name="reply_hint">Escreva comentários</string>
+    <string name="report">Relatório</string>
+    <string name="report_illegal">Ilegal</string>
+    <string name="report_success">Relatório de sucesso</string>
+    <string name="review_str">Revisão</string>
+    <string name="community">Comunidade</string>
+    <string name="rumor">Rumor</string>
+    <string name="sax">Sax</string>
+    <string name="select_reason">Escolha o motivo</string>
+    <string name="select_report_reason">Escolha o motivo do relatório</string>
+    <string name="select_share_picture">Selecione imagem para compartilhar</string>
+    <string name="set_nickname">Configurar apelido</string>
+    <string name="set_signature">Configurar assinatura</string>
+    <string name="share">Compartilhar</string>
+    <string name="share_need_net">Compartilhamento requer uma rede, tenha certeza que a rede atual está disponível</string>
+    <string name="share_success">Compartilhamento com sucesso</string>
+    <string name="share_title">Compartilhe com LIGO</string>
+    <string name="share_video_title">Edite o vídeo</string>
+    <string name="sharing">Está compartilhando</string>
+    <string name="sharpness">Nitidez</string>
+    <string name="show_location">Mostrar localização</string>
+    <string name="sinaweibo">Weibo</string>
+    <string name="soft_rock">Soft rock</string>
+    <string name="square">Quadrado</string>
+    <string name="strong_wind">strong wind</string>
+    <string name="suggest_follow">Sugestão para seguir</string>
+    <string name="take_photos">Tire foto</string>
+    <string name="takephoto_failed">Falha</string>
+    <string name="takephoto_sucess">Realizado</string>
+    <string name="takephoto_file">Fotos</string>
+    <string name="title_detail">Detalhes</string>
+    <string name="tungsten">Tungstênio</string>
+    <string name="voice_notic">Notificação de voz</string>
+    <string name="warmth">Calor</string>
+    <string name="watchlist">Lista de visualização</string>
+    <string name="wb_cloudy">Nublado</string>
+    <string name="wechat">We chat</string>
+    <string name="wechatmoments">Momentos</string>
+    <string name="white_balance">Balanço de branco</string>
+    <string name="year_ago">Ano atrás</string>
+    <string name="file_transfer_success">Transferência de arquivo realizado</string>
+    <string name="server_exception">Exceção de servidor</string>
+
+    <!--arrays-->
+    <string-array name="feedback_theme">
+        <item>@string/something_to_say</item>
+        <item>@string/hardware_problem</item>
+        <item>@string/problem_app</item>
+        <item>@string/problem_other</item>
+    </string-array>
+    <string name="please_connect_camera">Por favor, conectar dispositivo</string>
+    <string name="wifi_setting">Configuração de Wi-fi</string>
+    <string name="complete_">Completo</string>
+    <string name="is_positing">Obtendo informação de posicionamento</string>
+    <string name="cancel_select">Desmarcar</string>
+    <string name="commit_succeeded">Sucesso</string>
+    <string name="downloaded">Baixado</string>
+    <string name="enter_mobile_or_email">Insira celular ou Endereço de e-mail</string>
+    <string name="failed_sdcard">Cartão de memória não encontrado</string>
+    <string name="feedback_notice">Nota: apenas a coleta de dois dias do log do aplicativo, não envolve privacidade pessoal.</string>
+    <string name="getting_gps_info">Obtendo informação de GPS</string>
+    <string name="hint_enter_feedback">Por favor, insira um feedback</string>
+    <string name="is_take_photo">Tirando foto</string>
+    <string name="location">Local</string>
+    <string name="location_error">Erro de localização</string>
+    <string name="no_file">Sem arquivo</string>
+    <string name="phone_ablum">Álbum de telefone</string>
+    <string name="protect_notice">Nota: apenas a coleta de dois dias do log do aplicativo, não envolve privacidade pessoal.</string>
+    <string name="recorder_album">Álbum de gravação</string>
+    <string name="search_result">Busca resultado</string>
+    <string name="video_play">Play video</string>
+    <string name="please_select_file">Por favor, selecione um arquivo</string>
+    <string name="failed_to_load_click_Retry">Responder?</string>
+    <string name="camera_isbusy">Câmera ocupada!</string>
+    <string name="crop">Cortar</string>
+    <string name="illegal_report">Relatório Ilegal</string>
+    <string name="change_picture">Mudar foto</string>
+    <string name="lorry">Caminhão</string>
+    <string name="small_car">Carro</string>
+    <string name="car_type">Tipo de carro</string>
+    <string name="license_plate">Licença da matrícula</string>
+    <string name="enter_license_plate_number">Número da licença da matrícula</string>
+    <string name="contact_information">Informação de contato</string>
+    <string name="name">Nome</string>
+    <string name="show_bankcard_info">Mostrar Cartão Banco</string>
+    <string name="please_input_name">Por favor, insira nome</string>
+    <string name="input_phone_number">por favor, insira número de telefone</string>
+    <string name="edit_bankcard_info">Editar informação de cartão de banco</string>
+    <string name="illegal_time">Hora ilegal</string>
+    <string name="committing">Compromisso</string>
+    <string name="commit_need_net">Necessita rede, tenha certeza que sua rede atual está disponível</string>
+    <string name="bank_card_info">Informação de cartão de banco</string>
+    <string name="illegal_type">Tipo ilegal</string>
+    <string name="illegal_location">Localização ilegal</string>
+    <string name="enter_time_violation">Por favor, insira o tempo de violação</string>
+    <string name="choose_location_violation">Por favor, escolha a localização da violação</string>
+    <string name="enter_your_mobile_phone">Por favor, insira seu número de celular</string>
+    <string name="enter_name_bank_card">Insira o nome como no cartão do banco</string>
+    <string name="enter_id_number">Por favor, insira o número de ID</string>
+    <string name="enter_bank_card_number">Por favor, insira o número do cartão do banco</string>
+    <string name="illegal_info">Informação ilegal</string>
+    <string name="choose_illegal_type">Por favor, escolha o tipo ilegal</string>
+    <string name="no_bank_card_info">Sem informação de cartão de banco</string>
+    <string name="illegalActivity_name">Nome:</string>
+    <string name="illegalActivity_id_card">ID Cartão:</string>
+    <string name="illegalActivity_bank_card">Número do Cartão:</string>
+    <string name="illegalActivity_bank">Banco:</string>
+    <string name="wait_check">Aguarde verificação</string>
+    <string name="checking">Verificando</string>
+    <string name="check_rejected">Recusado</string>
+    <string name="check_pass">Aprovado</string>
+    <string name="refresh">Atualize</string>
+    <string name="switching_photo_mode">Mudando o modo de foto</string>
+    <string name="switching_record_mode">Mudando o modo de gravação</string>
+    <string name="Opening_record">Abrindo gravador</string>
+    <string name="successfully_saved_to">Salvo para</string>
+    <string name="downloading_exit">Baixando, deseja sair?</string>
+
+    <string name="phonenumber_prompt">Número do Celular:</string>
+    <string name="code_prompt">Código:</string>
+    <string name="email_prompt">Email:</string>
+    <string name="password_prompt">Senha:</string>
+    <string name="re_confirm_password_prompt">Confirme a senha:</string>
+    <string name="notnon_nickname">Apelido não pode ficar em branco</string>
+    <string name="nickname_too_long">Apelido muito longo (acima de 16 caracteres)</string>
+    <string name="software_protocol">Protocolo de software</string>
+    <string name="register_sucess">Registro realizado com sucesso, por favor mude o apelido</string>
+
+    <!--语音-->
+    <string name="beyond_maximum">Beyond word limitMais do que palavras</string>
+
+    <string name="password_least_six">Senha não deve ter menos do que 6 caracteres</string>
+    <string name="sex">Sexo</string>
+    <string name="secrecy">Sigilo</string>
+    <string name="man">Masculino</string>
+    <string name="female">Feminino</string>
+    <string name="set_sex">Configure sexo</string>
+    <string name="please_input_nickname">Insira apelido</string>
+    <string name="please_input_signature">Insira assinatura</string>
+    <string name="player_is_prepare">Jogador está preparando</string>
+    <string name="read_user_service">Por favor, Antes leia "O termo de serviço do usuário"</string>
+    <string name="choose_country">Escolha o país</string>
+    <string name="country_not_support_currently">País atualmente não atendido</string>
+    <string name="country">País</string>
+    <string name="phone_not_empty">Número de telefone não pode ficar em branco</string>
+    <string name="validation_failed">Falha na validação</string>
+    <string name="set_password">Configure a senha</string>
+    <string name="navi_locationFail">Falha de localização</string>
+    <string name="username_2_16_char">O nome de usuário deve ser de 2 a 16 caracteres</string>
+    <string name="forget_password">Esqueceu a senha?</string>
+    <string name="new_user">Registro</string>
+    <string name="please_stop_download">Por favor, pare o download primeiro</string>
+    <string name="soft_protocol">《Protocolo de software》</string>
+    <string name="agree_with">Concordo com</string>
+    <string name="WeChat_client_not_installed">WeChat não está instalado</string>
+    <string name="share_to">Compartilhar com %s</string>
+    <string name="my_share">Meu compartilhamento</string>
+    <string name="myreport">Meu relatório</string>
+    <string name="recommend">Recomendado</string>
+    <string name="wifi_password">Senha do Wi-fi</string>
+    <string name="sound_recording">Gravando som</string>
+    <string name="time_watermark">Marca d´água de tempo</string>
+    <string name="note_gsensor">Acontecendo a colisão, o video não cobre se for automaticamente bloqueado, ela será evidência do acidente</string>
+    <string name="camera_params">Parâmetros da câmera</string>
+    <string name="set_status">Configurando status, por favor aguarde</string>
+    <string name="formatting">Formatando</string>
+    <string name="photo_mode">Foto</string>
+    <string name="video_mode">Video</string>
+    <string name="cyclic_video">Loop</string>
+    <string name="urgent_video">Emergência</string>
+    <string name="switch_failed">Falha na mudança</string>
+    <string name="start_record_failed">Falha para iniciar gravação</string>
+    <string name="signature_can_not_empty">A assinatura não pode ficar em branco</string>
+    <string name="hardware_problem">Problema de hardware</string>
+    <string name="illegal_report_notice">Nota: o conteúdo deste relatório foi de mais de 72 horas, a polícia de trânsito não irá aceitá-lo, mas você pode enviá-lo para o controle de trânsito</string>
+    <string name="wifi_connect_no_camera">Wi-fi conectado mas a camera não está</string>
+    <string name="not_support_comment">Não suporta comentário</string>
+    <string name="not_support_share">Não suporta compartilhamento</string>
+    <string name="stop_recording_failed">No pudo detener la grabación</string>
+    <string name="no_wifi_result_notice">Não escaneado para Wi-fi. Verifique se os direitos de localização estão autorizados</string>
+    <string name="cyclic_record_time">Tiempo de grabacion ciclica</string>
+    <string name="connect_other"><u>Conecte outro dispositivo</u></string>
+    <string name="label_sd_error">Por favor, Compruebe la tarjeta SD</string>
+    <string name="snapshot">Instantánea</string>
+    <string name="parking_monitor">Parking monitor</string>
+
+    <string name="timeLapse_capture_mode">Mode de captura Timelapse</string>
+    <string name="timeLapse_video_mode">Modo de video timelapse</string>
+    <string name="setting_time_lapse_duration_unlimit">Ilimitado</string>
+    <string name="setting_time_lapse_duration_2M">2 minutos</string>
+    <string name="setting_time_lapse_duration_5M">5 minutos</string>
+    <string name="setting_time_lapse_duration_10M">10 minutos</string>
+    <string name="setting_time_lapse_duration_15M">15 minutos</string>
+    <string name="setting_time_lapse_duration_20M">20 minutos</string>
+    <string name="setting_time_lapse_duration_30M">30 minutos</string>
+    <string name="setting_time_lapse_duration_60M">60 minutos</string>
+    <string name="burst_off">Desligar</string>
+    <string name="burst_3">3 fotos</string>
+    <string name="burst_5">5 fotos</string>
+    <string name="burst_10">10 fotos</string>
+    <string name="burst_hs">Contínuo</string>
+    <string name="frequency_50HZ">50HZ</string>
+    <string name="frequency_60HZ">60HZ</string>
+    <string name="dateStamp_off">Desligado</string>
+    <string name="dateStamp_date">Data</string>
+    <string name="dateStamp_date_and_time">Data e hora</string>
+    <string name="camera_version">Versão</string>
+    <string name="timing_capture">Tempo de captura</string>
+    <string name="sequence">Sequência</string>
+    <string name="frequency">Frequência</string>
+    <string name="send_to">Enviar a</string>
+    <string name="no_card_notice">Por favor, introduzca tfcard\nen la grabadora</string>
+    <string name="camera_disconnect">Camera desconectada</string>
+    <string name="Video_resolution">Resolução de vídeo</string>
+
+    <string name="timelapse_record">Gravador Time-lapse</string>
+    <string name="slow_record">Gravação lenta</string>
+    <string name="cyclic_record">gravação cíclica</string>
+    <string name="mic">Microfone</string>
+    <string name="gyro_rsc">Gyro RSC</string>
+    <string name="date_stamping">Carimbo da data</string>
+    <string name="video_setting">Configuração de video</string>
+    <string name="image_quality">Qualidade de imagem</string>
+    <string name="anti_shaking">Anti-movimento</string>
+    <string name="system_setting">Configuração de sistema</string>
+    <string name="exposure">Exposição</string>
+    <string name="Field_of_view">Campo de visão</string>
+    <string name="capture_setting">Configuração de captura</string>
+    <string name="rotate">Rotação</string>
+    <string name="aqus_mode">Modo Aqus</string>
+    <string name="screensavers">Protetor de tela</string>
+    <string name="auto_power_off">Desligamento automático</string>
+    <string name="tv_mode">Modo de TV</string>
+    <string name="time_date">Hora/Data</string>
+    <string name="beep_sound">Som Beep</string>
+    <string name="camera_language">Idioma</string>
+    <string name="camera_wifi_setting">Configuração de Wi-fi</string>
+    <string name="camera_format">Formatar</string>
+    <string name="default_setting">Configuração Padrão</string>
+    <string name="deleting">Borrar...</string>
+    <string name="record">Gravador</string>
+    <string name="open_record_failed">No abrir expediente</string>
+    <string name="wifi_ssid">WiFi nombre</string>
+    <string name="wifi_input_ssid">WiFi nombre</string>
+    <string name="ssid_too_short">El wifi nombre introducida es menos de dos cifras, no puede ser modificado</string>
+    <string name="action_search">Search</string>
+    <string name="action_not_download">No se descargan:</string>
+    <string name="is_loging">Logging en...</string>
+    <string name="Two_input_password_error">¡Las contraseñas entrado dos veces son diferentes, por favor inténtelo de nuevo!</string>
+    <string name="action_Registered_successfully">Registro realizado com sucesso</string>
+    <string name="action_Are_logged_out">Log out..</string>
+
+    <string name="cameras_permission">Camara panoramica autorización verificación en progreso</string>
+    <string name="cameras_permission_fail">No activar la camara panoramica</string>
+    <string name="clip">Clip</string>
+    <string name="list">Lista</string>
+    <string name="dialog_add_network_failed">No añadir red!Algunos telefonos moviles no apoyan la conexión automática.Estás intentando conectar manualmente?</string>
+    <string name="delay_rec">Fotografia de lapso de tiempo</string>
+    <string name="select_operation_type">Por favor, selecione o tipo de operação</string>
+</resources>

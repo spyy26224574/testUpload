@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray_lite"
+              android:orientation="vertical"
+              tools:context="com.adai.gkdnavi.LocalAlbumActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/photo_album"
+        android:textColor="#fe9423"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="121dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/recorder_album"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_album"
+                    android:paddingRight="14dp"
+                    android:paddingTop="18dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_recorder_album"
+                    />
+
+                <LinearLayout
+                    android:layout_width="151dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:text="@string/recorder_album"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/recorder_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="121dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/downloaded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_album"
+                    android:paddingRight="14dp"
+                    android:paddingTop="18dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_picture"
+                    />
+
+                <LinearLayout
+                    android:layout_width="151dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/downloaded"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/downloaded_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="121dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/phone_ablum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_album"
+                    android:paddingRight="14dp"
+                    android:paddingTop="18dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_picture"/>
+
+                <LinearLayout
+                    android:layout_width="151dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/phone_ablum"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/phone_photos_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="121dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/montage_videos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_album"
+                    android:paddingRight="14dp"
+                    android:paddingTop="18dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_video"/>
+
+                <LinearLayout
+                    android:layout_width="151dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/clip_video"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/montage_videos_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

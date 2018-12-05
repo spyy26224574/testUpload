@@ -1,0 +1,10 @@
+//
+// Created by admin on 2016/10/31.
+//
+
+#ifndef FFMPEGPLAYER_VIDEOPLAYER_H
+#define FFMPEGPLAYER_VIDEOPLAYER_H
+
+
+
+#endif //FFMPEGPLAYER_VIDEOPLAYER_H

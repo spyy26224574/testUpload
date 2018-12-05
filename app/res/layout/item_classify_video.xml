@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/line_show_all" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/classify_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="逗趣天地"/>
+            <TextView 
+                android:id="@+id/classify_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:text="碰瓷?事故?"/>
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/more_video"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_all"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/more_arrow_text_color"
+            android:drawableRight="@drawable/more_arrow_selector"
+            android:layout_marginRight="@dimen/left_margin"/>
+    </LinearLayout>
+
+    <com.adai.gkdnavi.view.NoScrollGridView
+        android:id="@+id/videolistgrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_margin="5dp"
+        android:numColumns="2"/>
+</LinearLayout>

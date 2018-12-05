@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">@color/orange</color>
+    <color name="main_color_disenable">@color/orange_disenable</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="orange">#fe9423</color>
+    <color name="orange_disenable">#99fe9423</color>
+    <color name="black">#343434</color>
+    <color name="dark_black">#000000</color>
+    <color name="gray_lite">#c5c5c5</color>
+    <color name="gray">#999999</color>
+    <color name="transparent_">#00000000</color>
+    <color name="item_download_bg">#cccccccc</color>
+    <color name="gary">#898989</color>
+    <color name="heavy_orange">#e58520</color>
+    <color name="page_background">#f2f2f2</color>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="lv_tv_color">#ff353535</color>
+    <color name="lv_title_color">#ff999999</color>
+    <color name="white_a50">#ccffffff</color>
+    <!--ijk color-->
+
+    <color name="ijk_transparent_dark">#77000000</color>
+
+    <color name="bg_gray_lite">#f2f2f2</color>
+    <color name="text_color_gray">#888888</color>
+    <color name="bg_floder_press">#bdbdbd</color>
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+
+    <!--camera界面颜色-->
+    <color name="camera_drawer_bg">#1D1D1D</color>
+    <color name="camera_drawer_text_color">#FDFDFE</color>
+    <color name="camera_item_line">#282828</color>
+    <color name="black_light">#99000000</color>
+    <color name="resolution_bg">#7F666666</color>
+    
+    <color name="bg_gray">#ecedef</color>
+    <color name="transparent_black">#94333232</color>
+    
+    <color name="gray_normal">#666667</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+    <color name="dialog_bg_white">#f8f8f8</color>
+    <color name="dialog_bg_white_start">#f0f0f0</color>
+    <color name="divider_bg">#d7d7db</color>
+    <color name="button_bg_press">#eaeaea</color>
+    <color name="bar_blue">#2d96e9</color>
+    <color name="text_white">#ffffff</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="text_black">#000000</color>
+    <color name="text_blue">#2f8df1</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_press_gray">#a9a9a9</color>
+    <color name="background_green">#45c98d</color>
+    <color name="text_orange">#ff7f27</color>
+    <color name="text_green">#45c98d</color>
+    <color name="text_transparent">#00000000</color>
+    <color name="text_purple">#be729f</color>
+    <color name="text_red">#C4161C</color>
+    <color name="bg_red">#C4161C</color>
+    <color name="bg_thumbnail_default">#ff646464</color>
+
+    <color name="view_gray">#ebebeb</color>
+    <color name="video_bg">#252525</color>
+    <color name="bg_seekbar">#999999</color>
+    <color name="black_transparent_30">#b3575958</color>
+    <color name="translucent_white_24p">#3DFFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="bg_video_state">#96000000</color>
+
+    <color name="half_transparent">#80000000</color>
+    <color name="background_transparent">#00000000</color>
+
+    <color name="bg_pie_chart_used">#999999</color>
+    <color name="bg_pie_chart_rest">#ff7f27</color>
+
+    <color name="bg_playback_seek_bar">#2fff9933</color>
+    <color name="bg_playback_seek_bar_sos">#0fCC3300</color>
+    <color name="bg_playback_seek_thumb">#ff7f27</color>
+    <color name="bg_playback_tip">#ff2727</color>
+    <color name="app_color_style">#d04741</color>
+</resources>

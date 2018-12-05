@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/line_show_all"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/left_margin">
+
+        <!--<View
+            android:layout_width="3dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/holo_red_light" />-->
+
+        <TextView
+            android:id="@+id/classify_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/suggest_follow"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <com.adai.gkdnavi.view.NoscrollListview
+        android:id="@+id/recommandlist"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

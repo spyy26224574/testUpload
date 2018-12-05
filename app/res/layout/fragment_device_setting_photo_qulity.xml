@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_include_title_height"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/device_setting_return_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_back_title_selector" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/photo_quality"
+            android:textColor="#fe9423"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/photo_qulity_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_transparent"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/photo_qulity_value"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_small"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/recording_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_transparent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/recorded_time"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_smaller_x"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/photo_qulity_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_transparent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/lo_rbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/bg_white"
+            android:button="@null"
+            android:drawableEnd="@drawable/bg_picture_qulity"
+            android:padding="10dp"
+            android:text="@string/photo_qulity_lo"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small" />
+
+
+        <RadioButton
+            android:id="@+id/md_rbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/bg_white"
+            android:button="@null"
+            android:drawableEnd="@drawable/bg_picture_qulity"
+            android:padding="10dp"
+            android:text="@string/photo_qulity_md"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small" />
+
+        <RadioButton
+            android:id="@+id/hd_rbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/bg_white"
+            android:button="@null"
+            android:drawableEnd="@drawable/bg_picture_qulity"
+            android:padding="10dp"
+            android:text="@string/photo_qulity_hi"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small" />
+    </RadioGroup>
+</LinearLayout>

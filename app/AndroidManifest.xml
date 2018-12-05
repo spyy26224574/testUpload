@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.adai.gkdnavi">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--<uses-permission android:name="android.permission.WRITE_CALL_LOG"/>-->
+    <!--<uses-permission android:name="android.permission.READ_CALL_LOG"/>-->
+    <!-- 环信即时通讯的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="adnroid.permission.ACCESS_CHECKIN_PROPERTTES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS"/>-->
+    <!-- tan -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+
+    <uses-feature android:name="android.hardware.wifi"/>
+
+    <!--<uses-permission android:name="android.permission.SEND_SMS"/>-->
+    <!--<uses-permission android:name="android.permission.READ_SMS"/>-->
+    <!--<uses-permission android:name="android.permission.WRITE_SMS"/>-->
+    <!--<uses-permission android:name="android.permission.WRITE_CONTACTS"/>-->
+    <uses-permission android:name="android.permission.PROCESS_INCOMING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+    <!-- <permission android:name="android.permission.CHANE_WIFI_STATE"/> -->
+    <!-- <permission -->
+    <!-- android:name="com.camera.ligo.permission.C2D_MESSAGE" -->
+    <!-- android:protectionLevel="signature"/> -->
+    <!-- <uses-permission android:name="com.camera.ligo.permission.C2D_MESSAGE"/> -->
+    <application
+        android:name="com.example.ipcamera.application.VLCApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme_two">
+        <!--<provider-->
+            <!--android:name="android.support.v4.content.FileProvider"-->
+            <!--android:authorities="com.ligo.awfcardv.fileprovider"-->
+            <!--android:exported="false"-->
+            <!--android:grantUriPermissions="true">-->
+            <!--&lt;!&ndash;元数据&ndash;&gt;-->
+            <!--<meta-data-->
+                <!--android:name="android.support.FILE_PROVIDER_PATHS"-->
+                <!--android:resource="@xml/file_paths"/>-->
+        <!--</provider>-->
+        <!-- 高德地图 -->
+        <!-- <meta-data -->
+        <!-- android:name="com.amap.api.v2.apikey" -->
+        <!-- android:value="97c1064eae2a1976e7314389c8889589"/> -->
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="s5xxELdMr2UdVEvNOe8EL2ITmQ4moKe7"/>
+        <meta-data
+            android:name="WEIBO_APPKEY"
+            android:value="832311129"/>
+        <meta-data
+            android:name="WEIBO_CHANNEL"
+            android:value="weibo"/>
+        <!-- 百度语音 -->
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="8478347"/>
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="c36ahRnYxTR9ipYMirfnbI1U"/>
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="3d93b1a59c57125e248db7184f9bb764"/>
+        <!-- 0ATBydp9NWgmcdR62g5QdV1HNuc19VVu -->
+        <!-- 发布 -->
+        <!-- 6IXQrlPRLZvEXhmEdww6yzGL -->
+        <!-- 开发 -->
+        <activity
+            android:name=".GuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- qq分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1105480211"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".ResetPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".GuanyuActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".WifiConnectActivity"
+            android:configChanges="screenLayout|orientation|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FileManagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LocalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RemoteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LocalPhotoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PicturePreviewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name=".LocalPhotoPreviewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name=".VideoViewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <!-- camera setting -->
+        <activity
+            android:name=".CamSetNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CamSetPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CamSetAdvActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 后台服务下载 -->
+        <service android:name=".DownloadService">
+            <intent-filter>
+                <action android:name="com.adai.gkdnavi.downloadservice"/>
+            </intent-filter>
+        </service>
+        <!-- 百度地图所需的service -->
+        <!--
+             <service
+            android:name="com.baidu.location.f" 
+            android:enabled="true"
+            android:process=":remote" />
+        -->
+        <service android:name=".CheckSApContactService"/>
+
+        <activity
+            android:name="com.ijk.media.activity.VideoActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.adai.camera.pano.PanoVideoActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <!-- 广场开始 -->
+        <activity
+            android:name=".square.SquareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <!-- 广场结束 -->
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"/>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 设置环信应用的appkey 正式 -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="gkd666#gkdnavi"/>
+        <!-- 环信局域网测试 -->
+        <!-- <meta-data -->
+        <!-- android:name="EASEMOB_APPKEY" -->
+        <!-- android:value="42510#navi"/> -->
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+        <!-- umeng appkey，可忽略 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5844d961a325110590000b3d"/>
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="easemob"/> -->
+
+        <activity
+            android:name=".RemotePhotoPreviewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name=".FormalUpdateActivity"/>
+        <activity
+            android:name=".TypeVideoActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/title_activity_type_video"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".VideoDetailActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/title_activity_video_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainTabActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditVideoActivity"
+            android:label="@string/share_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditPersonalforActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PersonalCollectionActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ShareActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/share_title"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.SEND"/> -->
+            <!-- <action android:name="android.intent.action.SEND_MULTIPLE"/> -->
+
+
+            <!-- <data android:mimeType="image/*"/> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.filepicker.FilePickerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.filepicker.imagebrowse.PictureBrowseActivity"
+            android:label="@string/title_activity_picture_browse"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.filepicker.imagebrowse.RemotePictureBrowseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LocalAlbumActivity"
+            android:label="@string/title_activity_local_album"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FileGridActivity"
+            android:label="@string/title_activity_file_grid"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PersonalPageActivity"
+            android:label="@string/title_activity_personal_page"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".WebviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/title_activity_report"/>
+        <activity
+            android:name=".ShareLayoutActivity"
+            android:label="@string/title_activity_share_layout"
+            android:screenOrientation="landscape"
+            android:theme="@style/AlertDialog.AppCompat"/>
+        <activity
+            android:name=".LocalPictureActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AttentionListActivity"
+            android:label="@string/title_activity_attention_list"/>
+        <activity
+            android:name="com.photopicker.PhotoPickerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.photopicker.preview.PhotoPreviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.photocrop.CropImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SetNickNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SetSignatureActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".ShareLocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".LikeUserListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".gpsvideo.GpsVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity
+            android:name=".VideoPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme"/>
+        <activity
+            android:name=".PanoVideoPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme"/>
+        <activity
+            android:name=".FileGridNewActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".IllegalReportActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GetVideoFrameActivity"/>
+        <activity android:name=".EditBankInfoActivity"/>
+        <activity android:name=".IllegalTypeActivity"/>
+        <activity
+            android:name=".UserAgreementActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setSexActivity"/>
+        <activity
+            android:name=".CountryCodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SMSActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegisterEmailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MySharedActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.novatek.preview.NovatekPreviewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.novatek.preview.NovatekPanoPreviewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.novatek.settting.NovatekSettingActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.novatek.settting.subsetting.NovatekPasswordSettingActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.novatek.settting.subsetting.NovatekSubSettingActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.novatek.filemanager.NovatekDownloadPictureActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.novatek.filemanager.remote.NovatekVideoFileActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.mstar.preview.MstarPreviewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.mstar.setting.MstarSettingActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.mstar.setting.subsetting.MstarSubSettingActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.mstar.setting.subsetting.MstarPasswordSettingActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.mstar.filemanager.MstarFileVideoActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.novatek.filemanager.remote.NovatekPhotoFileActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.mstar.filemanager.MstarFilePhotoActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.sunplus.preview.SunplusPreviewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.sunplus.filemanager.SunplusFileActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.sunplus.filemanager.SunplusPictureBrowseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.sunplus.filemanager.SunplusVideoPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name="com.adai.camera.sunplus.setting.SunplusSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.sunplus.setting.SunplusSubSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <!-- hisilicon -->
+        <service
+            android:name="com.adai.camera.hisi.net.MessageService"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <activity
+            android:name="com.adai.camera.hisi.preview.HisiPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme"/>
+        <activity
+            android:name="com.adai.camera.hisi.setting.HisiSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.hisi.setting.HisiSubSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.hisi.filemanager.HisiFileVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.novatek.settting.NovatekWifiNameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.adai.camera.hisi.filemanager.HisiFilePhotoActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Pano360PreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme"/>
+        <activity
+            android:name="com.filepicker.imagebrowse.PanoImageActivity"
+            android:configChanges="screenLayout|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
